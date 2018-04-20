@@ -1,0 +1,42 @@
+/* pages/details/reward/reward.wxss */
+page{
+  background: #efefef;
+}
+.re_list{
+  font-size: 14px;
+  padding: 0 30rpx;
+  background: #fff;
+}
+.re_list_title{
+  color: #999999;
+  padding: 25rpx 0;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.re_list_title:last-child{
+  border: none
+}
+.re_msg_list{
+  padding: 25rpx 0;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.re_msg_list text{
+  color: #666666;
+}
+.re_msg{
+  padding-left: 16rpx;
+}
+.re_msg_c{
+  color: #ff6400;
+}
+.rule_list{
+  padding-bottom: 25rpx;
+}
+.rule_list text{
+  color: #666666;
+}
+.rule_list_msg{
+  padding-left: 16rpx;
+}
+.rule_title{
+  margin:20rpx 0 25rpx;
+}

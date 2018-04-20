@@ -1,0 +1,156 @@
+/**index.wxss**/
+page{
+  background: #efefef;
+}
+.i_ban{
+  position: relative
+}
+.position_box{
+  position: absolute;
+  top:30rpx;
+  z-index: 88;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  color: #858585;
+}
+.search{
+  width: 48rpx;
+  height: 48rpx;
+}
+.address{
+  float: left;
+  background: #fff;
+  font-size: 13px;
+  padding:0 30rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  border-radius: 24rpx;
+}
+.search_b{
+  float: right;
+}
+.slide-image{
+  width: 100%;
+  height: 150px;
+}
+.nav_bar{
+  background: #fff;
+  padding: 20rpx 0;
+}
+.nav_box{
+  background: #fff;
+}
+.nav_box image{
+  width: 100rpx;
+  height: 100rpx;
+  display: inline-block;
+}
+.nav{
+  text-align: center
+}
+.nav text{
+  display: block;
+  font-size: 14px;
+}
+.nav_box_1{
+  margin-top: 15rpx;
+}
+.new_list_box{
+  margin-top: 10px;
+}
+.list_title{
+  background: #fff;
+  padding-left: 30rpx;
+  font-size: 16px;
+  line-height: 80rpx;
+}
+.thumbnail{
+  width: 200rpx;
+  height: 141rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+  position: relative;
+}
+.thumbnail image{
+  width: 200rpx;
+  height: 141rpx;
+}
+.tips_hot{
+  position: absolute;
+  top:-110rpx;
+  left:-110rpx;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  width: 180rpx;
+  height: 180rpx;
+  transform: rotate(315deg)
+}
+.tips_hot text{
+  padding-top: 150rpx;
+  display: block;
+  font-size: 20rpx;
+  text-align: center;
+}
+.list_details{
+  background: #fff;
+  padding: 20rpx 0 20rpx 30rpx;
+  margin-bottom: 6px;
+}
+.list_detail{
+  font-size: 12px;
+}
+.list_name{
+  font-size: 16px;
+  margin-bottom: 14rpx;
+}
+.list_name text{
+  font-size: 10px;
+  background: #fd9e64;
+  color: #fff;
+  padding: 5rpx 10rpx;
+  border-radius: 6rpx;
+  display: inline-block;
+  margin-left:18rpx;
+  vertical-align: 4rpx;
+}
+.list_address{
+  color: #666666;
+}
+.list_money{
+  color: #ff724c;
+  line-height: 56rpx;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.list_yj{
+  color: #666666;
+  margin-top: 12rpx;
+}
+.list_yj text{
+  background: #f8c600;
+  padding: 5rpx 10rpx;
+  border-radius: 6rpx;
+  color: #fff;
+  margin-right: 10rpx;
+}
+
+.reward{
+  font-size: 12px;
+  color: #666666;
+  background: #eeeeee;
+  padding: 16rpx 30rpx 16rpx 20rpx;
+  margin:20rpx 30rpx 0 0;
+  border-radius: 6rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.reward text{
+  color: #e73820;
+  border: 1rpx #e73820 solid;
+  padding:4rpx 8rpx;
+  border-radius: 6rpx;
+  margin-right: 15rpx;
+}

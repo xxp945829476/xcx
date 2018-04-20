@@ -1,0 +1,30 @@
+<!--pages/wallet/wallet.wxml-->
+
+<view class='balance_box'>
+      <image src='/images/qian.png' class='balance_img'></image>
+      <view class='balance'>余额</view>
+      <text>0.00</text>
+</view>
+
+<view class='xui_flex wallet_nav'>
+      <navigator class='xui_flex_item wallet_nav_lixt' url='/pages/wallet/frozen/frozen' hover-class="none">
+          <view>0.00</view>
+          <text>冻结金额</text>
+      </navigator>
+      <navigator class='xui_flex_item' url='/pages/wallet/bank_card/bank_card' hover-class="none">
+          <view>0</view>
+          <text>银行卡</text>
+      </navigator>
+</view>
+
+
+<view class='xui_flex record'>
+      <navigator class='xui_flex_item' url='/pages/wallet/Billing_record/Billing_record' hover-class="none">
+          <image src='/images/jl.png' class=''></image>
+          <text>账单记录</text>
+      </navigator>
+      <navigator class='xui_flex_item' url='/pages/wallet/problem/problem' hover-class="none">
+          <image src='/images/wt.png'></image>
+          <text>常见问题</text>
+      </navigator>
+</view>

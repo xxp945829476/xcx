@@ -1,0 +1,23 @@
+/* pages/personal/set/set.wxss */
+.set_list_box{
+  margin-top: 40rpx;
+}
+.set_list{
+  padding: 24rpx 30rpx;
+  font-size: 28rpx;
+}
+.set_list input{
+  border: 1rpx solid #f8f8f8;
+  border-radius: 8rpx;
+  padding-left: 10rpx;
+  height: 70rpx;
+}
+.set_list_1{
+  width: 200rpx;
+  padding-right: 10rpx;
+  text-align: right;
+}
+.sure{
+  margin: 40rpx 30rpx;
+  font-size: 16px;
+}

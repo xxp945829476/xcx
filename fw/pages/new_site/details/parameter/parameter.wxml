@@ -1,0 +1,60 @@
+<!--pages/details/parameter/parameter.wxml-->
+
+<view class='para_list'>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>开盘时间</view>:
+        <text class='xui_flex_item'>2017年1月10日推出</text>
+    </view>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>交房时间</view>:
+        <text class='xui_flex_item'>2017年1月10日推出</text>
+    </view>
+</view>
+<view class='para_list'>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>总户数</view>:
+        <text class='xui_flex_item'>2017年1月10日推出</text>
+    </view>
+    <view class='xui_flex para_lm '>
+        <view class='para_msg'>容积率</view>:
+        <text class='xui_flex_item'>1.1</text>
+    </view>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>车位数</view>:
+        <text class='xui_flex_item'>1.1</text>
+    </view>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>装修情况</view>:
+        <text class='xui_flex_item'>1.1</text>
+    </view>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>占地面积</view>:
+        <text class='xui_flex_item'>1.1</text>
+    </view>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>建筑面积</view>:
+        <text class='xui_flex_item'>1.1</text>
+    </view>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>建筑类型</view>:
+        <text class='xui_flex_item'>1.1</text>
+    </view>
+</view>
+<view class='para_list'>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>开发商</view>:
+        <text class='xui_flex_item'>2017年1月10日推出2017年1月10日推出2017年1月10日推出2017年1月10日推出</text>
+    </view>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>物业公司</view>:
+        <text class='xui_flex_item'>1.1</text>
+    </view>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>物业类型</view>:
+        <text class='xui_flex_item'>1.1</text>
+    </view>
+    <view class='xui_flex para_lm'>
+        <view class='para_msg'>物业费</view>:
+        <text class='xui_flex_item'>1.1</text>
+    </view>
+</view>

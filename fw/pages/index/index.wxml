@@ -1,0 +1,69 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='i_ban'>
+        <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+          <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+            <swiper-item>
+              <image src="{{item.img}}" class="slide-image" mode="{{item.mode}}"/>
+            </swiper-item>
+          </block>
+        </swiper>
+        <view class='position_box'>
+              <navigator class='address' url='/pages/select_city/select_city'>无锡</navigator>
+              <view class='search_b'>
+                  <image class='search' src='/images/search.png'></image>
+              </view>
+        </view>
+    </view>
+    
+    <view class='nav_bar'>
+        <view class='xui_flex nav_box'>
+          <navigator class='nav xui_flex_item' url="/pages/new_site/resources/new_site" open-type="switchTab" hover-class="none">
+              <image src="/images/xp.png"/>
+              <text>新盘</text>
+          </navigator>
+          <navigator class='nav xui_flex_item' url="/pages/wallet/resources/wallet" hover-class="none">
+              <image src="/images/qb.png"/>
+              <text>钱包</text>
+          </navigator>
+          <navigator class='nav xui_flex_item' url="/pages/personal/resources/personal" hover-class="none" open-type="switchTab">
+              <image src="/images/wd.png"/>
+              <text>我的</text>
+          </navigator >
+        </view>
+        <view class='xui_flex nav_box nav_box_1'>
+            <navigator class='nav xui_flex_item' url="/pages/customer/customer" hover-class="none">
+                <image src="/images/kh.png"/>
+                <text>客户</text>
+            </navigator>
+            <navigator class='nav xui_flex_item' url="" hover-class="none">
+                <image src="/images/zx.png"/>
+                <text>资讯</text>
+            </navigator>
+            <navigator class='nav xui_flex_item' url="/pages/distributor/resources/resources" hover-class="none">
+                <image src="/images/fxs.png"/>
+                <text>分销商</text>
+            </navigator >
+        </view>
+    </view>
+
+    <view class='new_list_box'>
+        <view class='list_title'>新房推荐</view>
+        <view>
+            <navigator wx:for="{{list}}" wx:key="{{item}}" url="/pages/new_site/details/details/details?title={{item.title}}" class='list_details'>
+              <view class='xui_flex'>
+                  <view class='thumbnail'><image src="{{item.src}}"/><view class='tips_hot'><text>热销</text></view></view>
+                  <view class='xui_flex_item list_detail'>
+                      <view class='list_name'>{{item.title}}<text>{{item.type}}</text></view>
+                      <view class='list_address'>{{item.address}}</view>
+                      <view class='list_money'>{{item.price}}元/平米</view>
+                      <view class='list_yj'><text>佣</text>佣金：{{item.reward}}</view>
+                  </view>
+              </view>
+              <view class='reward'><text>奖励说明</text>115㎡15000 115㎡15000 115㎡15000 115㎡15000 115㎡15000</view>
+            </navigator>
+        </view>
+    </view>
+    
+</view>

@@ -1,0 +1,23 @@
+<!--pages/distributor/resources/resources.wxml-->
+
+<view class='xui_flex res_nav'>
+    <view class='xui_flex_item'>名称</view>
+    <view class='xui_flex_item'>等级</view>
+    <view class='xui_flex_item'>佣金比例</view>
+    <view class='xui_flex_item'>分佣金额</view>
+</view>
+
+<view>
+    <view class='res_list xui_flex xui_align-items'>
+          <view class='xui_flex_item'>莫莫莫莫莫莫莫莫莫莫莫莫</view>
+          <view class='xui_flex_item'>2级</view>
+          <view class='xui_flex_item'>5%</view>
+          <view class='xui_flex_item'>50.00</view>
+    </view>
+    <view class='res_list xui_flex xui_align-items'>
+          <view class='xui_flex_item'>莫莫莫</view>
+          <view class='xui_flex_item'>2级</view>
+          <view class='xui_flex_item'>5%</view>
+          <view class='xui_flex_item'>50.00</view>
+    </view>
+</view>

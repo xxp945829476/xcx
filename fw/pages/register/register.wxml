@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='r_list_box'>
+        <view class='xui_flex r_list'>
+          <label>
+              <image src='/images/tel.png'></image>
+          </label>
+          <view class='xui_flex_item'>
+              <input placeholder="请输入手机号" placeholder-style="color:#dfdfdf"></input>
+          </view>
+        </view>
+        <view class='xui_flex r_list'>
+            <label>
+                <image src='/images/code.png'></image>
+            </label>
+            <view class='xui_flex_item'>
+                <input placeholder="请输入验证码"  placeholder-style="color:#dfdfdf"></input>
+            </view>
+            <button disabled="{{disabled}}" bindtap="getCode">{{time}}</button>
+        </view>
+        <view class='xui_flex r_list'>
+            <label>
+                <image src='/images/password.png'></image>
+            </label>
+            <view class='xui_flex_item'>
+                <input placeholder="请设置密码"  placeholder-style="color:#dfdfdf"></input>
+            </view>
+        </view>
+        <view class='xui_flex r_list'>
+            <label>
+                <image src='/images/yaoq.png'></image>
+            </label>
+            <view class='xui_flex_item'>
+                <input placeholder="邀请码（选填）"  placeholder-style="color:#dfdfdf"></input>
+            </view>
+        </view>
+  </view>
+</view>
+<view class='re_btn'>
+      <button>注册</button>
+</view>
+
+  <view class='r_tips'>
+      <view class='xy'>注册即视为同意<navigator url="/pages/index/index" hover-class="none">用户协议</navigator ></view>
+      <view>温馨提示：建议使用数字、字母和符号两种及以上的组合,6~20个字符</view>  
+  </view>
+
+  

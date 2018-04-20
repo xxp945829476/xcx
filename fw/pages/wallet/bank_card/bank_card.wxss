@@ -1,0 +1,42 @@
+/* pages/wallet/bank_card/bank_card.wxss */
+page{
+  background: #efefef;
+}
+.add_card{
+  padding: 26rpx 30rpx;
+  font-size: 15px;
+  background: #fff;
+}
+.add{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: -10rpx;
+  padding-right: 15rpx;
+}
+.save{
+  text-align: center;
+  font-size: 13px;
+  margin-top: 24rpx;
+}
+.save_img{
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: -5rpx;
+  padding-right: 10rpx;
+}
+.card_num_box{
+  background: #fff;
+  margin-top: 10px;
+}
+.card_num{
+  font-size: 15px;
+  padding: 26rpx 30rpx;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.card_num text{
+  color: #999;
+  font-size: 13px;
+}
+.card_num:last-child{
+  border: none
+}

@@ -1,0 +1,50 @@
+/* pages/wallet/wallet.wxss */
+
+page{
+  background: #efefef;
+}
+.balance_box{
+  text-align: center;
+  background: #fff;
+  padding: 40rpx 0 30rpx;
+  font-size: 16px;
+}
+.balance_img{
+  width: 160rpx;
+  height: 160rpx;
+}
+.balance{
+  padding: 10rpx;
+}
+.balance_box text{
+  font-size: 18px;
+}
+.wallet_nav{
+  background: #fff;
+  text-align: center;
+  border-top: 1rpx solid #f8f8f8;
+  padding: 20rpx 0;
+  font-size: 16px;
+}
+.wallet_nav text{
+  display: block;
+  margin-top: 8rpx;
+}
+.wallet_nav_lixt{
+  border-right: 1rpx solid #f8f8f8;
+}
+.record{
+  background: #fff;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  padding: 60rpx 0;
+}
+.record image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.record text{
+  display: block;
+  margin-top: 10rpx;
+}

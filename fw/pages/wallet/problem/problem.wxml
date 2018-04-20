@@ -1,0 +1,21 @@
+<!--pages/wallet/problem/problem.wxml-->
+
+
+<view class='p_list_box'>
+    <navigator class='xui_flex p_list xui_align-items' url='/pages/wallet/card_problem/card_problem'>
+        <image src='/images/yhk.png' class='p_icon'></image>
+        <view class='xui_flex_item'>
+            <view>银行卡问题</view>
+            <text class='p_text'>如何绑定银行卡?支持绑定那些银行卡</text>
+        </view>
+        <view class='xui_lt p_l'></view>
+    </navigator>
+    <navigator class='xui_flex p_list xui_align-items' url='/pages/wallet/Withdrawals_problem/Withdrawals_problem'>
+        <image src='/images/tx.png' class='p_icon'></image>
+        <view class='xui_flex_item'>
+            <view>提现问题</view>
+            <text class='p_text'>提现什么时候到账？提现有金额限制吗？</text>
+        </view>
+        <view class='xui_lt p_l'></view>
+    </navigator>
+</view>

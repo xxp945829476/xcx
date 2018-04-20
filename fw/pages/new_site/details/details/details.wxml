@@ -1,0 +1,90 @@
+<!--pages/details/details.wxml-->
+<view>
+    <navigator url="/pages/new_site/details/preview/preview" class='ban'>
+        <image class="slide-image" src='/images/ban1.jpg'></image>
+        <image class='tp' src='/images/tp.png'></image>
+    </navigator>
+    <view class='l_content'>
+        <view class='xui_flex l_info_box'>
+            <view class='l_info l_active'><image src='/images/money.png'></image>均价：</view>
+            <view class='xui_flex_item l_info l_info_1'>¥1500<text>在售</text></view>
+            <navigator url='/pages/new_site/details/parameter/parameter' class='l_info l_info_2 xui_lt' hover-class="none">楼盘参数</navigator>
+        </view>
+        <view class='xui_flex l_info_box'>
+            <view class='l_info l_active'><image src='/images/address.png'></image>地址：</view>
+            <view class='xui_flex_item l_info'>北京北京市北京市北京市北京市北京市北京市北京市市</view>
+        </view>
+        <view class='xui_flex l_info_box'>
+            <view class='l_info xui_flex_item l_info_3 l_active' id="l_info_3"><image src='/images/hz.png'></image>合作经纪人:100</view>
+            <view class='xui_flex_item l_info l_active'><image src='/images/yxkh.png'></image>意向客户:59</view>
+        </view>
+    </view>
+
+    <view class='commission_box'>
+        <navigator url='/pages/new_site/details/reward/reward' class='commission_t xui_flex' hover-class="none">
+            <view class='xui_flex_item'>佣金奖励</view>
+            <view class='xui_lt'>详情</view>
+        </navigator>
+        <view class='commission_msg'>
+            <view class='commission_type'>
+                <view class='commission_b'>佣金：<text>待定</text></view>
+                <view class='commission_c'><text>奖励说明：</text>格子铺格子铺格子铺格子铺格子铺格子铺格子铺格子铺格子铺</view>
+            </view>
+            <view class='commission_com'>结佣公司：北京有限公司</view>
+        </view>
+    </view>
+    <view class='commission_box'>
+        <view class='commission_t xui_flex'>
+            <view class='xui_flex_item'>优惠活动</view>
+        </view>
+        <view class='favourable_msg'>
+              <text>现场优惠</text>
+              <view>当天认购减180%</view>
+        </view>
+    </view>
+    <view class='commission_box'>
+        <navigator url='' class='commission_t xui_flex'>
+            <view class='xui_flex_item'>主力户型</view>
+             <view class='xui_lt all_apartment'>全部户型（共<text>11</text>个）</view>
+        </navigator>
+        <view class='apartment_list_box'>
+              <view class='apartment_list xui_flex xui_align-items'>
+                  <view class='hx_img'><image src='/images/hx.jpg'></image></view>
+                  <view class='xui_flex_item'>
+                      <view class='hx_title'>三室2厅</view>
+                      <text class='hx_big'>155㎡</text>
+                  </view>
+              </view>
+              <view class='apartment_list xui_flex xui_align-items'>
+                  <view class='hx_img'><image src='/images/hx.jpg'></image></view>
+                  <view class='xui_flex_item'>
+                      <view class='hx_title'>三室2厅</view>
+                      <text class='hx_big'>155㎡</text>
+                  </view>
+              </view>
+              <view class='apartment_list xui_flex xui_align-items'>
+                  <view class='hx_img'><image src='/images/hx.jpg'></image></view>
+                  <view class='xui_flex_item'>
+                      <view class='hx_title'>三室2厅</view>
+                      <text class='hx_big'>155㎡</text>
+                  </view>
+              </view>
+        </view>
+    </view>
+
+    <view class='commission_box'>
+        <view class='commission_t xui_flex'>
+            <view class='xui_flex_item'>楼盘卖点</view>
+        </view>
+        <view class='favourable_msg'>
+              <text>价格优势</text>
+              <view>当天认购减180%当天认购减180%当天认购减180%当天认购减180%当天认购减180%当天认购减180%</view>
+        </view>
+    </view>
+    <view class='common_line'></view>
+    <view class='bot_nav xui_flex'>
+        <view class='tel_ac' bindtap='call'><image src='/images/tel_icon.png'></image><text class='tel_ac_1'>联系案场</text></view>
+        <text class='xui_flex_item tel_zx'  bindtap='calling'>电话咨询</text>
+        <navigator class='xui_flex_item'>报备客户</navigator> 
+    </view>
+</view>

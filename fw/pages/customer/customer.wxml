@@ -1,0 +1,82 @@
+<!--pages/customer/customer.wxml-->
+
+<navigator class='add_cus_box' url='/pages/new_site/details/report/report'>
+    <image src='/images/add.png' class='add_cus'></image>
+    添加客户
+</navigator>
+
+<view class='cus_nav_box xui_flex'>
+    <view class="cus_nav xui_flex_item {{num==index ? 'on':''}}" bindtap='tab' wx:for="{{lists}}" wx:key="{{item}}" id="{{index}}">{{item}}</view>
+</view>
+<view class='cus_list_box' wx:if="{{num==0}}">
+    <navigator class='cus_list' url=''>
+          <view class='cus_title'><text>2018年4月</text></view>
+          <view class='cus_content_box'>
+              <view>
+                  <view class='cus_name'>谁谁谁<text>13814554258</text></view>
+                  <view class='cus_lp'>阳光100喜马拉雅<text>报备未确认</text></view>
+              </view>
+          </view>
+    </navigator>
+</view>
+
+<view class='cus_list_box' wx:if="{{num==1}}">
+    <navigator class='cus_list' url=''>
+          <view class='cus_title'><text>2018年4月</text></view>
+          <view class='cus_content_box'>
+              <view>
+                  <view class='cus_name'>谁谁谁<text>13814554258</text></view>
+                  <view class='cus_lp'>阳光100喜马拉雅<text>报备确认</text></view>
+              </view>
+          </view>
+    </navigator>
+</view>
+
+<view class='cus_list_box' wx:if="{{num==2}}">
+    <navigator class='cus_list' url=''>
+          <view class='cus_title'><text>2018年4月</text></view>
+          <view class='cus_content_box'>
+              <view>
+                  <view class='cus_name'>谁谁谁<text>13814554258</text></view>
+                  <view class='cus_lp'>阳光100喜马拉雅<text>看房</text></view>
+              </view>
+          </view>
+    </navigator>
+</view>
+
+<view class='cus_list_box' wx:if="{{num==3}}">
+    <navigator class='cus_list' url=''>
+          <view class='cus_title'><text>2018年4月</text></view>
+          <view class='cus_content_box'>
+              <view>
+                  <view class='cus_name'>谁谁谁<text>13814554258</text></view>
+                  <view class='cus_lp'>阳光100喜马拉雅<text>认购</text></view>
+              </view>
+          </view>
+    </navigator>
+</view>
+
+<view class='cus_list_box' wx:if="{{num==4}}">
+    <navigator class='cus_list' url=''>
+          <view class='cus_title'><text>2018年4月</text></view>
+          <view class='cus_content_box'>
+              <view>
+                  <view class='cus_name'>谁谁谁<text>13814554258</text></view>
+                  <view class='cus_lp'>阳光100喜马拉雅<text>结佣</text></view>
+              </view>
+          </view>
+    </navigator>
+</view>
+
+<view class='cus_list_box' wx:if="{{num==5}}">
+    <navigator class='cus_list' url=''>
+          <view class='cus_title'><text>2018年4月</text></view>
+          <view class='cus_content_box'>
+              <view>
+                  <view class='cus_name'>谁谁谁<text>13814554258</text></view>
+                  <view class='cus_lp'>阳光100喜马拉雅<text>无效</text></view>
+              </view>
+          </view>
+    </navigator>
+</view>
+

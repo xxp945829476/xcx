@@ -1,0 +1,35 @@
+/* pages/wallet/add_card/add_card.wxss */
+
+page{
+  background: #efefef;
+}
+.bd_msg{
+  font-size: 14px;
+  color: #aeaeae;
+  padding-left: 30rpx;
+  line-height: 80rpx;
+  background: #fff;
+}
+.add_list_box{
+  background: #fff;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.add_list{
+  padding: 26rpx 30rpx;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.add_list:last-child{
+  border: none;
+}
+.add_list_bank{
+  text-align: right;
+  color: #999;
+  font-size: 13px;
+}
+.next_pre{
+  background: #fff;
+  margin:40rpx 30rpx;
+  text-align: center;
+  font-size: 16px;
+}

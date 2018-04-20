@@ -1,0 +1,25 @@
+/* pages/wallet/problem/problem.wxss */
+page{
+  background: #efefef;
+}
+.p_icon{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 16rpx;
+}
+.p_list{
+  background: #fff;
+  padding: 20rpx 30rpx;
+  font-size: 16px;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.p_list:last-child{
+  border: none
+}
+.p_text{
+  font-size: 12px;
+  color: #999;
+}
+.p_l{
+  padding-right: 30rpx;
+}

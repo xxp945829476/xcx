@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+
+  <view class='my_list_box'>
+        <view class='xui_flex my_list'>
+            <view class='xui_flex_item'>手机号</view>
+            <view class='my_list_c'>128****953</view>
+        </view>
+        <view class='xui_flex my_list'>
+            <view class='xui_flex_item'>地区</view>
+            <view class='my_list_c'>北京</view>
+        </view>
+        <navigator class='xui_flex my_list' url='/pages/personal/set/set' hover-class='none'>
+            <view class='xui_flex_item'>设置</view>
+        </navigator>
+  </view>
+</view>

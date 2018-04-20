@@ -1,0 +1,85 @@
+/* pages/select_city/select_city.wxss */
+.search_box{
+  text-align: center;
+  font-size: 28rpx;
+  color: #9f9f9f;
+  border: 1rpx solid #dedede;
+  margin: 20rpx 30rpx;
+  border-radius: 10rpx;
+  padding: 10rpx 0;
+}
+.s_icon{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  padding-right: 10rpx;
+}
+.pos_city{
+  background: #efefef;
+  font-size: 30rpx;
+  padding:20rpx 30rpx;
+}
+.pos_auto{
+  font-size: 30rpx;
+  color: #319b59;
+  padding: 20rpx 30rpx;
+}
+.pos{
+  width: 48rpx;
+  height: 48rpx;
+}
+.city_list{
+  font-size: 30rpx;
+  padding: 26rpx 30rpx;
+  border-bottom: 1rpx solid #efefef;
+}
+.upper{
+  position: fixed;
+  right: 20rpx;
+  top: 150rpx;
+  width: 24rpx; 
+}
+.upper text{
+  display: block;
+  font-size: 24rpx;
+  color: #9a9a9a;
+  text-align: center;
+  margin-top: 6rpx;
+}
+.ba{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 3;
+}
+.search_content_box{
+  background: #efefef;
+  padding: 26rpx 30rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.search_content input{
+  font-size: 28rpx;
+  padding-left: 10rpx;
+}
+.ss_icon{
+  margin-top: 8rpx;
+  margin-left: 18rpx;
+}
+.search_t{
+  border: 1rpx solid #dedede;
+}
+
+.cancel{
+    background: #fff;
+    padding: 20rpx 16rpx;
+    border-left: 1rpx solid #f8f8f8;
+}
+.search_content{
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden
+}
+

@@ -1,0 +1,92 @@
+<!--pages/select_city/select_city.wxml-->
+
+<view class='search_box'>
+    <view bindtap='searchShow'><image class='s_icon' src='/images/search_icon.png'></image>搜索</view>
+</view>
+
+<view class='pos_city'>定位城市</view>
+
+<view class='pos_auto xui_flex xui_align-items'>
+    <view class='xui_flex_item'>{{currentCity}}</view>
+    <view>
+        <image class='pos' src='/images/pos.png'></image>
+    </view>
+</view>
+<scroll-view scroll-y="{{true}}" scroll-into-view="{{num}}" style="height: {{winHeight}}px;">
+  <view>
+    <view class='pos_city'>热门城市</view>
+    <view class='city_list_box'>
+        <view class='city_list'>北京</view>
+        <view class='city_list'>广州</view>
+        <view class='city_list'>深圳</view>
+        <view class='city_list'>上海</view>
+    </view>
+    <view class='pos_city' id='A'>A</view>
+    <view class='city_list_box'>
+        <view class='city_list'>阿克苏</view>
+        <view class='city_list'>安达</view>
+        <view class='city_list'>安康</view>
+        <view class='city_list'>安庆</view>
+    </view>
+    <view class='pos_city' id='B'>B</view>
+    <view class='city_list_box'>
+        <view class='city_list'>阿克苏</view>
+        <view class='city_list'>安达</view>
+        <view class='city_list'>安康</view>
+        <view class='city_list'>安庆</view>
+    </view>
+    <view class='pos_city' id='C'>C</view>
+    <view class='city_list_box'>
+        <view class='city_list'>阿克苏</view>
+        <view class='city_list'>安达</view>
+        <view class='city_list'>安康</view>
+        <view class='city_list'>安庆</view>
+    </view>
+  </view>
+
+</scroll-view>
+
+
+
+
+<view class='upper'>
+    <text>A</text>
+    <text>B</text>
+    <text>C</text>
+    <text>D</text>
+    <text>E</text>
+    <text>F</text>
+    <text>G</text>
+    <text>H</text>
+    <text>I</text>
+    <text>J</text>
+    <text>K</text>
+    <text>L</text>
+    <text>M</text>
+    <text>N</text>
+    <text>O</text>
+    <text>P</text>
+    <text>Q</text>
+    <text>R</text>
+    <text>S</text>
+    <text>T</text>
+    <text>U</text>
+    <text>V</text>
+    <text>W</text>
+    <text>X</text>
+    <text>Y</text>
+    <text>Z</text>
+</view>
+
+<view class='ba' wx:if="{{show}}">
+    <view class='search_content_box'>
+      <view class='xui_flex xui_align-items search_content'>
+          <icon class='ss_icon' type="search" size="16" color=""/>
+          <view class='xui_flex_item'><input placeholder="输入城市名称进行搜索" auto-focus/></view>
+          <view class='cancel' bindtap='searchHide'>取消</view>
+        </view>
+      </view>
+</view>
+
+
+

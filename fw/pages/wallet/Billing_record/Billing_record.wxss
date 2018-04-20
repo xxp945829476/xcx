@@ -1,0 +1,39 @@
+/* pages/wallet/Billing_record/Billing_record.wxss */
+page{
+  background: #efefef;
+}
+.bill_nav{
+  text-align: center;
+  background: #6a6e77;
+  color: #fff;
+  font-size: 30rpx;
+  padding: 16rpx 0;
+}
+.bill_nav text{
+  display: block;
+  margin-top: 6rpx;
+}
+.bill_nav_1{
+  border-right: 1rpx solid #8c9099;
+}
+.bill_list_box{
+  margin-top: 10px;
+}
+.bill_list{
+  background: #fff;
+  padding: 20rpx 30rpx;
+  font-size: 15px;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.bill_list:last-child{
+  border: none
+}
+.bill_list text{
+  color: #ff5a00;
+  font-size: 16px;
+}
+.time{
+  color: #999;
+  font-size: 12px;
+  margin-top: 6rpx;
+}

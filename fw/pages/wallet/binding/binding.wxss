@@ -1,0 +1,65 @@
+/* pages/wallet/binding/binding.wxss */
+
+page{
+  background: #f7f7f7;
+}
+.container{
+  background: #fff;
+}
+.r_list_box{
+  border-top:1rpx solid #d9d9d9;
+  padding: 0 30rpx;
+}
+.r_list{
+  padding: 40rpx 0;
+  font-size: 16px;
+  border-top:1rpx solid #efe7e7;
+  line-height:2.55555556;
+  position: relative;
+
+}
+.r_list:first-child{
+  border: none
+}
+.r_list button{
+  background: #5dc8ff;
+  color: #fff;
+  border: none;
+  font-size:14px;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  top: 34rpx;
+}
+.r_list label{
+  margin-top: 4rpx;
+}
+.r_list input{
+  padding-left: 15rpx;
+}
+.r_list label image{
+  width: 46rpx;
+  height: 46rpx;
+  display: block;
+}
+.re_btn{
+  padding: 20px 30px;
+}
+.re_btn button{
+  background: #5dc8ff;
+  color: #fff;
+  font-size: 17px;
+}
+.r_tips{
+  padding: 0 30rpx;
+  color: #c3c3c3;
+  font-size: 14px;
+}
+.r_tips navigator{
+  color: #5dc8ff;
+  text-decoration: underline;
+  display: inline
+}
+.xy{
+  margin: 20rpx 0;
+}

@@ -1,0 +1,16 @@
+<!--pages/wallet/bank_card/bank_card.wxml-->
+
+<navigator class='add_card' url='/pages/wallet/add_card/add_card'><image src='/images/add.png' class='add'></image>添加银行卡</navigator>
+
+
+<view class='card_num_box'>
+    <view class='card_num'>
+        <view>招商银行</view>
+        <text>1234 **** **** 5662 256</text>
+    </view>
+</view>
+
+<view  class='save'>
+      <image src='/images/hd.png' class='save_img'></image>账户安全保护中
+</view>
+

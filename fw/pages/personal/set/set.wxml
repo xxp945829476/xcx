@@ -1,0 +1,24 @@
+<!--pages/personal/set/set.wxml-->
+
+<view class='set_list_box'>
+      <view class='xui_flex set_list xui_align-items'>
+          <view class='set_list_1'>当前密码：</view>
+          <view class='xui_flex_item'>
+                <input password type="text"/>
+          </view>
+      </view>
+      <view class='xui_flex set_list xui_align-items'>
+          <view class='set_list_1'>新密码：</view>
+          <view class='xui_flex_item'>
+                <input password type="text"/>
+          </view>
+      </view>
+      <view class='xui_flex set_list xui_align-items'>
+          <view class='set_list_1'>再次确认密码：</view>
+          <view class='xui_flex_item'>
+                <input password type="text"/>
+          </view>
+      </view>
+</view>
+
+<button class='sure'>确定</button>

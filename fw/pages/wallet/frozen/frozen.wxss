@@ -1,0 +1,37 @@
+/* pages/wallet/frozen/frozen.wxss */
+page{
+  background: #efefef;
+}
+.nav{
+  text-align: center;
+  font-size: 16px;
+  padding: 20rpx 0;
+  color: #999;
+  background: #fff;
+}
+.nav_1{
+  border-right: 1rpx solid #f8f8f8;
+}
+.nav .on{
+  color: #35a958;
+}
+.frozen_box{
+  background: #fff;
+  margin-top: 10px;
+}
+
+.frozen_list{
+  padding: 26rpx 30rpx;
+  font-size: 14px;
+}
+.yx_je{
+  color: #ff5a00;
+}
+.frozen_list text{
+  font-size: 18px;
+  padding-left: 10rpx;
+}
+.sx_je{
+  color: #999;
+  text-decoration:line-through;
+}

@@ -1,0 +1,141 @@
+page{
+  background: #efefef;
+}
+
+.search_box{
+  background: #32a959;
+  padding: 0 30rpx;
+  color: #fff;
+  font-size: 15px;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.sel_address{
+  padding-right: 40rpx;
+  position: relative;
+}
+.sel_address:after{
+  content: "";
+  width: 0;
+  height: 0;
+  border: 12rpx solid #fff;
+  position: absolute;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  right: 0;
+  top: 45%;
+}
+.search{
+  padding-left: 30rpx;
+  margin-left: 30rpx;
+  color: rgba(255,255,255,0.5);
+  position: relative;
+}
+.search:after{
+  content: '';
+  position: absolute;
+  width: 1rpx;
+  height: 50rpx;
+  left: 0;
+  top:50%;
+  background: rgba(255,255,255,0.5);
+  margin-top: -25rpx;
+}
+.search icon{
+  vertical-align: -3rpx;
+}
+.search text{
+  padding-left: 10rpx;
+}
+
+.new_list_box{
+  margin-top: 10px;
+}
+.thumbnail{
+  width: 200rpx;
+  height: 141rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+  position: relative;
+}
+.thumbnail image{
+  width: 200rpx;
+  height: 141rpx;
+}
+.tips_hot{
+  position: absolute;
+  top:-110rpx;
+  left:-110rpx;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  width: 180rpx;
+  height: 180rpx;
+  transform: rotate(315deg)
+}
+.tips_hot text{
+  padding-top: 150rpx;
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+.list_details{
+  background: #fff;
+  padding: 20rpx 0 20rpx 30rpx;
+  margin-bottom: 6px;
+}
+.list_detail{
+  font-size: 12px;
+}
+.list_name{
+  font-size: 16px;
+  margin-bottom: 14rpx;
+}
+.list_name text{
+  font-size: 10px;
+  background: #fd9e64;
+  color: #fff;
+  padding: 5rpx 10rpx;
+  border-radius: 6rpx;
+  display: inline-block;
+  margin-left:18rpx;
+  vertical-align: 4rpx;
+}
+.list_address{
+  color: #666666;
+}
+.list_money{
+  color: #ff724c;
+  line-height: 56rpx;
+  border-bottom: 1rpx solid #efe7e7;
+}
+.list_yj{
+  color: #666666;
+  margin-top: 12rpx;
+}
+.list_yj text{
+  background: #f8c600;
+  padding: 5rpx 10rpx;
+  border-radius: 6rpx;
+  color: #fff;
+  margin-right: 10rpx;
+}
+.reward{
+  font-size: 12px;
+  color: #666666;
+  background: #eeeeee;
+  padding: 16rpx 30rpx 16rpx 20rpx;
+  margin:20rpx 30rpx 0 0;
+  border-radius: 6rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.reward text{
+  color: #e73820;
+  border: 1rpx #e73820 solid;
+  padding:4rpx 8rpx;
+  border-radius: 6rpx;
+  margin-right: 15rpx;
+}

@@ -1,0 +1,42 @@
+<!--pages/details/reward/reward.wxml-->
+
+<view class='re_list'>
+    <view class='re_list_title'>项目佣金</view>
+    <view class='xui_flex re_msg_list'>
+        <text>后拥:</text>
+        <view class='xui_flex_item re_msg re_msg_c'>1500-60000元/套</view>
+    </view>
+    <view class='xui_flex re_msg_list'>
+        <text>奖励说明:</text>
+        <view class='xui_flex_item re_msg'>115佣金1500115佣金1500115佣金1500115佣金1500</view>
+    </view>
+</view>
+
+<view class='re_list'>
+    <view class='re_list_title rule_title'>合作规则</view>
+    <view class='xui_flex rule_list'>
+        <text>合作日期:</text>
+        <view class='xui_flex_item rule_list_msg'>2018-10-1 - 2018-10-2</view>
+    </view>
+    <view class='xui_flex rule_list'>
+        <text>合作房源:</text>
+        <view class='xui_flex_item rule_list_msg'>2018-10-1 - 2018-10-2</view>
+    </view>
+    <view class='xui_flex rule_list'>
+        <text>可售套数:</text>
+        <view class='xui_flex_item rule_list_msg'>2018-10-1 - 2018-10-2</view>
+    </view>
+    <view class='xui_flex rule_list'>
+        <text>开盘日期:</text>
+        <view class='xui_flex_item rule_list_msg'>2018-10-1 - 2018-10-2</view>
+    </view>
+
+    <view class='xui_flex rule_list'>
+        <text>结佣公司:</text>
+        <view class='xui_flex_item rule_list_msg'>2018-10-1 - 2018-10-2</view>
+    </view>
+    <view class='xui_flex rule_list'>
+        <text>结佣周期:</text>
+        <view class='xui_flex_item rule_list_msg'>2018-10-1 - 2018-10-2</view>
+    </view>
+</view>

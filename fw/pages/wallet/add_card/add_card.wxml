@@ -1,0 +1,63 @@
+<!--pages/wallet/add_card/add_card.wxml-->
+<view class='bd_msg'>请绑定持卡人本人的银行借借记卡</view>
+
+<view class='add_list_box'>
+    <view class='add_list xui_flex'>
+        <view>开户银行</view>
+        <view class='xui_flex_item add_list_bank'>
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                    {{array[index]}}
+                </view>
+              </picker>
+        </view>
+    </view>
+    <view class='add_list xui_flex'>
+        <view>姓名</view>
+        <view class='xui_flex_item add_list_bank'>
+              <input placeholder="请输入您的姓名" placeholder-style="color:#999"/>
+        </view>
+    </view>
+    <view class='add_list xui_flex'>
+        <view>身份证号</view>
+        <view class='xui_flex_item add_list_bank'>
+              <input placeholder="请输入您的身份证号" placeholder-style="color:#999"/>
+        </view>
+    </view>
+    <view class='add_list xui_flex'>
+        <view>银行卡卡号</view>
+        <view class='xui_flex_item add_list_bank'>
+              <input placeholder="请输入您的银行卡卡号" placeholder-style="color:#999"/>
+        </view>
+    </view>
+    <view class='add_list xui_flex'>
+        <view>开户行所在省份</view>
+        <view class='xui_flex_item add_list_bank'>
+              <picker bindchange="bindProvinceChange" value="{{index}}" range="{{citySrray}}"  range-key="name">
+                <view class="picker">
+                    {{citySrray[minIndex].name}}
+                </view>
+              </picker>
+        </view>
+    </view>
+    <view class='add_list xui_flex'>
+        <view>开户行所在城市</view>
+        <view class='xui_flex_item add_list_bank'>
+              <picker bindchange="bindCityChange" value="{{index}}" range="{{citySrray[minIndex].city}}"  range-key="name">
+                <view class="picker">
+                    {{citySrray[minIndex].city[cityIdex].name}}
+                </view>
+              </picker>
+        </view>
+    </view>
+
+    <view class='add_list xui_flex'>
+        <view>手机号码</view>
+        <view class='xui_flex_item add_list_bank'>
+              <input value='157****6926' disabled='{{true}}'/>
+        </view>
+    </view>
+</view>
+
+<button class='next_pre' bindtap='submit'>下一步</button>
+

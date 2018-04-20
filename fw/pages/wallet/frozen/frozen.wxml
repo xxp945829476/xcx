@@ -1,0 +1,22 @@
+<!--pages/wallet/frozen/frozen.wxml-->
+
+<view class='nav xui_flex'>
+      <view class="xui_flex_item nav_1 {{show==1 ? 'on' : ''}}" bindtap='tab' id="1">有效</view>
+      <view class="xui_flex_item {{show==2 ? 'on' : ''}}" bindtap='tab' id="2">失效</view>
+</view>
+
+<!--有效  -->
+ <view class='frozen_box' wx-if="{{show==1}}">
+      <view class='frozen_list xui_flex xui_align-items'>
+          <view class='xui_flex_item'>总金额</view>
+          <view class='yx_je'>¥<text>1.00</text></view>
+      </view>
+</view> 
+
+<!--失效  -->
+<view class='frozen_box' wx-if="{{show==2}}">
+      <view class='frozen_list xui_flex xui_align-items'>
+          <view class='xui_flex_item'>总金额</view>
+          <view class='yx_je sx_je'>¥<text>1.00</text></view>
+      </view>
+</view>

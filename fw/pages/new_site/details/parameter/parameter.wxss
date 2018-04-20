@@ -1,0 +1,21 @@
+/* pages/details/parameter/parameter.wxss */
+.para_list{
+  font-size: 14px;
+  padding: 25rpx 30rpx 0;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.para_list text{
+  color: #666666;
+  padding-left: 30rpx;
+}
+.para_msg{
+  width: 120rpx;
+  text-justify: justify;
+  text-align-last: justify;
+}
+.para_lm{
+  padding-bottom: 25rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center
+}

@@ -1,0 +1,81 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/select_city/select_city",
+    "pages/new_site/resources/new_site",
+    
+    
+    
+    "pages/customer/customer",
+    
+    
+    
+    
+    "pages/register/register",
+    
+    
+    "pages/new_site/details/report/report",
+    
+    
+    "pages/new_site/details/details/details",
+    
+    "pages/position/position",
+    
+    "pages/new_site/details/preview/preview",
+    "pages/new_site/details/parameter/parameter",
+    "pages/new_site/details/reward/reward",
+
+    "pages/personal/resources/personal",
+    "pages/personal/set/set",
+
+    "pages/distributor/resources/resources",
+
+    "pages/wallet/resources/wallet",
+    "pages/wallet/frozen/frozen",
+    "pages/wallet/bank_card/bank_card",
+    "pages/wallet/add_card/add_card",
+    "pages/wallet/binding/binding",
+    "pages/wallet/Billing_record/Billing_record",
+    "pages/wallet/problem/problem",
+    "pages/wallet/card_problem/card_problem",
+    "pages/wallet/Withdrawals_problem/Withdrawals_problem"
+  ],  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#32a959",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "images/index_icon_press.png",
+        "iconPath": "images/index_icon.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/new_icon_press.png",
+        "iconPath": "images/new_icon.png",
+        "pagePath": "pages/new_site/resources/new_site",
+        "text": "新盘"
+      },
+      {
+        "selectedIconPath": "images/zxun_icon_press.png",
+        "iconPath": "images/zxun_icon.png",
+        "pagePath": "pages/position/position",
+        "text": "资讯"
+      },
+      {
+        "selectedIconPath": "images/my_icon_press.png",
+        "iconPath": "images/my_icon.png",
+        "pagePath": "pages/personal/resources/personal",
+        "text": "我的"
+      }
+    ],
+    "color":"#8a8a8a",
+    "selectedColor":"#32a959",
+    "backgroundColor":"#fff",
+    "borderStyle":"#fff"
+  }
+}

@@ -1,0 +1,12 @@
+<!--pages/wallet/Withdrawals_problem/Withdrawals_problem.wxml-->
+
+<view>
+    <view>
+          <view class="w_list" wx:for="{{lists}}" wx:key="item" id="{{index}}" bindtap='up'>
+                <view class='w_list_title'>{{item.title}}</view>
+                <view class="w_list_msg {{num==index ? 'w_list_msg_show' : ''}}">
+                    <text>{{item.msg}}</text>
+                </view>
+          </view>
+    </view>
+</view>

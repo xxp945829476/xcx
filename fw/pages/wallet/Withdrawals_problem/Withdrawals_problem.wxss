@@ -1,0 +1,31 @@
+/* pages/wallet/Withdrawals_problem/Withdrawals_problem.wxss */
+page{
+  background: #efefef;
+}
+.w_list{
+  font-size: 15px;
+  border-bottom: 1rpx solid #dbdbdb;
+}
+.w_list:last-child{
+  border: none;
+}
+.w_list_title{
+  background: #fff;
+  padding: 26rpx 30rpx;
+}
+.w_list_msg{
+  transform: translateY(-50%);
+  transition: .3s;
+  opacity: 0;
+  height: 0;
+  overflow: hidden
+}
+.w_list_msg text{
+  padding: 26rpx 30rpx;
+  display: block;
+}
+.w_list_msg_show{
+  transform: translateY(0);
+  opacity: 1;
+  height: auto;
+}

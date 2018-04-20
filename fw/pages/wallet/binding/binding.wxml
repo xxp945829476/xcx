@@ -1,0 +1,25 @@
+<!--pages/wallet/binding/binding.wxml-->
+<view class="container">
+  <view class='r_list_box'>
+        <view class='xui_flex r_list'>
+          <label>
+              <image src='/images/tel.png'></image>
+          </label>
+          <view class='xui_flex_item'>
+              <input placeholder="请输入手机号" placeholder-style="color:#dfdfdf"></input>
+          </view>
+        </view>
+        <view class='xui_flex r_list'>
+            <label>
+                <image src='/images/code.png'></image>
+            </label>
+            <view class='xui_flex_item'>
+                <input placeholder="请输入验证码"  placeholder-style="color:#dfdfdf"></input>
+            </view>
+            <button disabled="{{disabled}}" bindtap="getCode">{{time}}</button>
+        </view>
+  </view>
+</view>
+<view class='re_btn'>
+      <button>绑定</button>
+</view>

@@ -1,0 +1,29 @@
+<!--pages/wallet/Billing_record/Billing_record.wxml-->
+
+<view class='xui_flex bill_nav'>
+    <view class='xui_flex_item bill_nav_1'>
+        <view>累计收入</view>
+        <text>0.00</text>
+    </view>
+    <view class='xui_flex_item'>
+        <view>累计提取</view>
+        <text>0.00</text>
+    </view>
+</view>
+
+<view class='bill_list_box'>
+      <view class='bill_list xui_flex xui_align-items'>
+          <view class='xui_flex_item'>
+              <view>佣金收入</view>
+              <view class='time'>2018.10.20</view>
+          </view>
+          <text>+3000</text>
+      </view>
+      <view class='bill_list xui_flex xui_align-items'>
+          <view class='xui_flex_item'>
+              <view>提取金额</view>
+              <view class='time'>2018.10.20</view>
+          </view>
+          <text>-3000</text>
+      </view>
+</view>

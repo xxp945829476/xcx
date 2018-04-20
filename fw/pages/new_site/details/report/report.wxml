@@ -1,0 +1,78 @@
+<!--pages/new_site/details/report/report.wxml-->
+
+<view>
+    <view class='xui_flex report_list xui_align-items'>
+        <text>客户姓名</text>：
+        <view class='xui_flex_item'>
+            <input  maxlength="6" placeholder="请输入客户姓名" placeholder-style="color:#d2d2d1" />
+        </view>
+    </view>
+    <view class='xui_flex report_list xui_align-items'>
+        <text>手机号码</text>：
+        <view class='xui_flex_item'>
+            <input  type="number" placeholder="请填写报备客户手机号码" placeholder-style="color:#d2d2d1" />
+        </view>
+    </view>
+    <view class='xui_flex report_list xui_align-items'>
+        <text>其他号码</text>：
+        <view class='xui_flex_item'>
+            <input  type="number" placeholder="请输入客户其他手机号（选填）" placeholder-style="color:#d2d2d1" />
+        </view>
+    </view>
+    <view class='xui_flex report_list xui_align-items'>
+        <text>性别</text>：
+        <view class='xui_flex_item'>
+            <radio-group class="radio-group">
+               <label class="radio">
+                  <radio value="1" checked color= "#ff924c"/>男
+              </label>
+              <label class="radio">
+                  <radio value="2" color= "#ff924c"/>女
+              </label>
+            </radio-group>
+        </view>
+    </view>
+    <view class='xui_flex report_list xui_align-items'>
+        <text>咨询项目</text>：
+        <view class='xui_flex_item'>
+            <input value="某某商城" disabled='{{true}}' />
+        </view>
+    </view>
+    <view class='xui_flex report_list xui_align-items'>
+        <text>备注</text>：
+        <view class='xui_flex_item'>
+           <textarea class='remarks' auto-height placeholder="和项目经理留言"  />
+        </view>
+    </view>
+</view>
+<view class='intention'>购房意向</view>
+<view class='intention_box'>
+      <view class='intention_no'>未填写（完善购房意向可帮助置业顾问更好的接待客户,促进成交）</view>
+</view>
+<view class='total_price'>
+    <text class='total_price_title'>总价（万）</text>
+    <view class='line'>
+          <view class='price_section'>¥0~¥1000</view>
+    </view>
+</view>
+<view class='region'>
+    <text class='region_title'>区域</text>
+    <view class='region_list_box'>
+         <checkbox-group bindchange="checkboxChange">
+            <label wx:for="{{items}}" id="{{index}}" bindtap="changColor" class="region_list {{item.checked ? 'region_list_c' : ''}}">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </checkbox-group>
+    </view>
+</view>
+
+<view class='region'>
+    <text class='region_title'>户型/类型</text>
+    <view class='region_list_box'>
+          <checkbox-group bindchange="hxChange">
+            <label wx:for="{{apartmens}}" id="{{index}}" bindtap="changColorTwo" class="region_list {{item.checked ? 'region_list_c' : ''}}">
+              <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </checkbox-group>
+    </view>
+</view>

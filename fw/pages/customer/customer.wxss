@@ -1,0 +1,66 @@
+/* pages/customer/customer.wxss */
+page{
+  background: #efefef;
+}
+.add_cus_box{
+  padding:24rpx 30rpx;
+  font-size: 15px;
+  background: #fff;
+}
+.add_cus{
+  width: 55rpx;
+  height: 55rpx;
+  vertical-align: middle;
+  padding-right: 10rpx;
+}
+.cus_nav_box{
+  background: #fff;
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: center;
+  padding: 24rpx 0;
+}
+.on{
+  color: #3aa150;
+}
+.cus_list_box{
+  margin-top: 10px;
+}
+.cus_list{
+  background: #fff;
+}
+.cus_title{
+  color: #a4a4a4;
+  font-size:16px;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.cus_title text{
+  border-left: 6rpx solid #3fc593;
+  padding-left: 30rpx;
+}
+.cus_content_box{
+  padding: 36rpx 30rpx;
+  font-size: 14px;
+}
+.cus_name{
+  font-size: 16px;
+}
+.cus_name text{
+  font-size: 14px;
+  color: #a4a4a4;
+  padding-left: 16rpx;
+}
+.cus_lp{
+  color: #a4a4a4;
+  font-size: 13px;
+  margin-top: 16rpx;
+}
+.cus_lp text{
+  color: #ef8d66;
+  border: 1rpx solid #ef8d66;
+  padding: 4rpx 10rpx;
+  border-radius: 10rpx;
+  display: inline-block;
+  margin-left: 16rpx;
+}

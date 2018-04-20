@@ -1,0 +1,15 @@
+/* pages/distributor/resources/resources.wxss */
+.res_nav,.res_list{
+  text-align: center;
+  font-size: 26rpx;
+  padding: 26rpx 0;
+  background: #efefef;
+}
+.res_list{
+  background: #fff;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.res_list .xui_flex_item{
+  padding: 0 10rpx;
+}
+
