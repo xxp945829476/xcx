@@ -58,21 +58,17 @@
 <view class='region'>
     <text class='region_title'>区域</text>
     <view class='region_list_box'>
-         <checkbox-group bindchange="checkboxChange">
-            <label wx:for="{{items}}" id="{{index}}" bindtap="changColor" class="region_list {{item.checked ? 'region_list_c' : ''}}">
-              <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
-            </label>
-          </checkbox-group>
+            <view wx:for="{{items}}" id="{{item.value}}" bindtap="changColor" class="region_list {{item.currentColor ? 'region_list_c' : ''}}">
+             {{item.value}}
+            </view>
+    </view>
+</view>
+<view class='region'>
+    <text class='region_title'>区域</text>
+    <view class='region_list_box'>
+            <view wx:for="{{apartmens}}" id="{{item.value}}" bindtap="" class="region_list {{item.currentColor ? 'region_list_c' : ''}}">
+             {{item.value}}
+            </view>
     </view>
 </view>
 
-<view class='region'>
-    <text class='region_title'>户型/类型</text>
-    <view class='region_list_box'>
-          <checkbox-group bindchange="hxChange">
-            <label wx:for="{{apartmens}}" id="{{index}}" bindtap="changColorTwo" class="region_list {{item.checked ? 'region_list_c' : ''}}">
-              <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
-            </label>
-          </checkbox-group>
-    </view>
-</view>

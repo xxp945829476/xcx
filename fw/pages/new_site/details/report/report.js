@@ -7,19 +7,21 @@ Page({
   data: {
     select:true,
     selectTwo: true,
+    num:'',
+    arrr:[],
     items: [
-      { name: '', value: '全城', checked: false},
-      { name: 'CHN', value: '中国', checked: false},
-      { name: 'BRA', value: '巴西', checked: false},
-      { name: 'JPN', value: '日本', checked: false},
-      { name: 'ENG', value: '英国', checked: false},
-      { name: 'TUR', value: '法国', checked: false},
+      { name: '', value: '全城',currentColor:false},
+      { name: 'CHN', value: '中国', currentColor: false},
+      { name: 'BRA', value: '巴西', currentColor: false},
+      { name: 'JPN', value: '日本', currentColor: false},
+      { name: 'ENG', value: '英国', currentColor: false},
+      { name: 'TUR', value: '法国', currentColor: false},
     ],
     apartmens: [
-      { id: '0', value: '不限', checked: false },
-      { id: '1', value: '一室', checked: false },
-      { id: '2', value: '二室', checked: false },
-      { id: '3', value: '三室', checked: false },
+      { id: '0', value: '不限', currentColor: false},
+      { id: '1', value: '一室', currentColor: false},
+      { id: '2', value: '二室', currentColor: false},
+      { id: '3', value: '三室', currentColor: false},
     ]
   },
 
@@ -29,65 +31,55 @@ Page({
   onLoad: function (options) {
   
   },
-  checkboxChange: function (e) {
-    console.log('checkbox发生change事件，携带value值为：', e.detail.value);
-    if (e.detail.value.length>3){
-      this.setData({
-        select: false
-      })
-    }else{
-      this.setData({
-        select: true
-      })
-    };
+  changColor:function(e){
+    
+    var id = e.currentTarget.id;
     var that = this;
-    var num = that.data.items.length;
     var list = that.data.items;
-    if (e.detail.value=="全城"){
-      for (var i = 1; i < num;++i){
-        list[i].checked = false;
+    var arr = []
+
+ 
+
+      for (var i = 0; i < list.length; i++) {
+       
+        if (list[i].value == id) {
+          if (that.data.num >= 3){
+            if (list[i].value == '全城') {
+              list[i].currentColor = !list[i].currentColor;
+            }else{
+              list[i].currentColor = false
+            }
+             
+            }else{
+              list[i].currentColor = !list[i].currentColor;
+            };
+            
+        } else {
+          if (list[0].currentColor) {
+            list[i].currentColor = false;
+          }
+        };
         
+        if (list[i].currentColor == true) {
+          if (list[0].currentColor){
+              arr.splice(0,arr.length,'全城')
+            }else{
+                arr.push(list[i].value)
+            }
+          }
       }
      
-      that.setData({
-        items: list
-      })
-      console.log(that.data.items)
-    }
-  },
-  hxChange: function (e) {
-    console.log('checkbox发生change事件，携带value值为：', e.detail.value.length);
-    if (e.detail.value.length > 3) {
-      this.setData({
-        selectTwo: false
-      })
-    }else{
-      this.setData({
-        selectTwo: true
-      })
-    }
-  },
-  changColor:function(e){
-    var that = this;
-    var list = that.data.items;
-    var id = e.currentTarget.id;
-    if (that.data.select){
-        list[id].checked = !list[id].checked;
-        that.setData({
-          items: list
-        })
-    }
-  },
-  changColorTwo: function (e) {
-    var that = this;
-    var list = that.data.apartmens;
-    var id = e.currentTarget.id;
-    if (that.data.selectTwo) {
-      list[id].checked = !list[id].checked;
-      that.setData({
-        apartmens: list
-      })
-    }
-  }
+      
+      if (arr.length>=3){
+        arr.splice(3,arr.length)
+      }
+      console.log(arr.length)
+      console.log(arr)
 
+      that.setData({
+        items: list,
+        num: arr.length
+      })
+    
+  }
 })

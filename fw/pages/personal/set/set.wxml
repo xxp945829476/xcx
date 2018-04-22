@@ -14,7 +14,7 @@
           </view>
       </view>
       <view class='xui_flex set_list xui_align-items'>
-          <view class='set_list_1'>再次确认密码：</view>
+          <view class='set_list_1'>确认密码：</view>
           <view class='xui_flex_item'>
                 <input password type="text"/>
           </view>

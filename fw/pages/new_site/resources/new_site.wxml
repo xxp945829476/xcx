@@ -2,13 +2,13 @@
 <view class="container">
     <view class='fixed'>
         <view class='search_box xui_flex'>
-          <navigator url="/pages/register/register" class='sel_address' hover-class="none">无锡</navigator>
-          <navigator url="" class='xui_flex_item search' hover-class="none"><icon type="search" color="#acdcbc"  size="14"></icon><text>搜索楼盘</text></navigator>
+          <navigator url="/pages/select_city/select_city" class='sel_address' hover-class="none">无锡</navigator>
+          <view class='xui_flex_item search' bindtap='searchShow'><icon type="search" color="#acdcbc"  size="14"></icon><text>搜索楼盘</text></view>
         </view>
     </view>
     
-
-    <view class='new_list_box'>
+    <scroll-view scroll-y="{{true}}" style="height: {{winHeight}}px;">
+        <view class='new_list_box'>
         <view>
             <navigator class='xui_flex list_details' url="/pages/details/details">
                 <view class='thumbnail'><image src="/images/xt.jpg"/><view class='tips_hot'><text>新盘</text></view></view>
@@ -43,79 +43,19 @@
             </view>
             <view class='reward'><text>奖励说明</text>115㎡15000 115㎡15000 115㎡15000 115㎡15000 115㎡15000</view>
             </navigator>
-            <navigator url="" class='list_details'>
-            <view class='xui_flex'>
-                <view class='thumbnail'><image src="/images/xt.jpg"/><view class='tips_hot'><text>热销</text></view></view>
-                <view class='xui_flex_item list_detail'>
-                    <view class='list_name'>成都万达城<text>寓</text></view>
-                    <view class='list_address'>成都-都江堰市</view>
-                    <view class='list_money'>最低价6000元/平米</view>
-                    <view class='list_yj'><text>佣</text>佣金：待定</view>
-                </view>
-            </view>
-            <view class='reward'><text>奖励说明</text>115㎡15000 115㎡15000 115㎡15000 115㎡15000 115㎡15000</view>
-            </navigator>
-            <navigator url="" class='list_details'>
-            <view class='xui_flex'>
-                <view class='thumbnail'><image src="/images/xt.jpg"/><view class='tips_hot'><text>热销</text></view></view>
-                <view class='xui_flex_item list_detail'>
-                    <view class='list_name'>成都万达城<text>寓</text></view>
-                    <view class='list_address'>成都-都江堰市</view>
-                    <view class='list_money'>最低价6000元/平米</view>
-                    <view class='list_yj'><text>佣</text>佣金：待定</view>
-                </view>
-            </view>
-            <view class='reward'><text>奖励说明</text>115㎡15000 115㎡15000 115㎡15000 115㎡15000 115㎡15000</view>
-            </navigator>
-            <navigator url="" class='list_details'>
-            <view class='xui_flex'>
-                <view class='thumbnail'><image src="/images/xt.jpg"/><view class='tips_hot'><text>热销</text></view></view>
-                <view class='xui_flex_item list_detail'>
-                    <view class='list_name'>成都万达城<text>寓</text></view>
-                    <view class='list_address'>成都-都江堰市</view>
-                    <view class='list_money'>最低价6000元/平米</view>
-                    <view class='list_yj'><text>佣</text>佣金：待定</view>
-                </view>
-            </view>
-            <view class='reward'><text>奖励说明</text>115㎡15000 115㎡15000 115㎡15000 115㎡15000 115㎡15000</view>
-            </navigator>
-            <navigator url="" class='list_details'>
-            <view class='xui_flex'>
-                <view class='thumbnail'><image src="/images/xt.jpg"/><view class='tips_hot'><text>热销</text></view></view>
-                <view class='xui_flex_item list_detail'>
-                    <view class='list_name'>成都万达城<text>寓</text></view>
-                    <view class='list_address'>成都-都江堰市</view>
-                    <view class='list_money'>最低价6000元/平米</view>
-                    <view class='list_yj'><text>佣</text>佣金：待定</view>
-                </view>
-            </view>
-            <view class='reward'><text>奖励说明</text>115㎡15000 115㎡15000 115㎡15000 115㎡15000 115㎡15000</view>
-            </navigator>
-            <navigator url="" class='list_details'>
-            <view class='xui_flex'>
-                <view class='thumbnail'><image src="/images/xt.jpg"/><view class='tips_hot'><text>热销</text></view></view>
-                <view class='xui_flex_item list_detail'>
-                    <view class='list_name'>成都万达城<text>寓</text></view>
-                    <view class='list_address'>成都-都江堰市</view>
-                    <view class='list_money'>最低价6000元/平米</view>
-                    <view class='list_yj'><text>佣</text>佣金：待定</view>
-                </view>
-            </view>
-            <view class='reward'><text>奖励说明</text>115㎡15000 115㎡15000 115㎡15000 115㎡15000 115㎡15000</view>
-            </navigator>
-            <navigator url="" class='list_details'>
-            <view class='xui_flex'>
-                <view class='thumbnail'><image src="/images/xt.jpg"/><view class='tips_hot'><text>热销</text></view></view>
-                <view class='xui_flex_item list_detail'>
-                    <view class='list_name'>成都万达城<text>寓</text></view>
-                    <view class='list_address'>成都-都江堰市</view>
-                    <view class='list_money'>最低价6000元/平米</view>
-                    <view class='list_yj'><text>佣</text>佣金：待定</view>
-                </view>
-            </view>
-            <view class='reward'><text>奖励说明</text>115㎡15000 115㎡15000 115㎡15000 115㎡15000 115㎡15000</view>
-            </navigator>
         </view>
     </view>
+    </scroll-view>
+</view>
+
+
+<view class='ba' wx:if="{{show}}">
+    <view class='search_content_box'>
+      <view class='xui_flex xui_align-items search_content'>
+          <icon class='ss_icon' type="search" size="16" color=""/>
+          <view class='xui_flex_item'><input placeholder="搜索楼盘" auto-focus/></view>
+          <view class='cancel' bindtap='searchHide'>取消</view>
+        </view>
+      </view>
 </view>
 

@@ -11,9 +11,9 @@
         </swiper>
         <view class='position_box'>
               <navigator class='address' url='/pages/select_city/select_city'>无锡</navigator>
-              <view class='search_b'>
+              <navigator class='search_b' url="/pages/new_site/resources/new_site" open-type="switchTab">
                   <image class='search' src='/images/search.png'></image>
-              </view>
+              </navigator>
         </view>
     </view>
     
@@ -65,5 +65,6 @@
             </navigator>
         </view>
     </view>
-    
 </view>
+
+

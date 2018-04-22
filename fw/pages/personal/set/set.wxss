@@ -13,7 +13,7 @@
   height: 70rpx;
 }
 .set_list_1{
-  width: 200rpx;
+  width: 180rpx;
   padding-right: 10rpx;
   text-align: right;
 }

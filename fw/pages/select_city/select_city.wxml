@@ -1,5 +1,5 @@
 <!--pages/select_city/select_city.wxml-->
-
+<scroll-view scroll-y="{{true}}" scroll-into-view="{{num}}" style="height: {{winHeight}}px;">
 <view class='search_box'>
     <view bindtap='searchShow'><image class='s_icon' src='/images/search_icon.png'></image>搜索</view>
 </view>
@@ -12,7 +12,7 @@
         <image class='pos' src='/images/pos.png'></image>
     </view>
 </view>
-<scroll-view scroll-y="{{true}}" scroll-into-view="{{num}}" style="height: {{winHeight}}px;">
+
   <view>
     <view class='pos_city'>热门城市</view>
     <view class='city_list_box'>
@@ -52,7 +52,7 @@
 <view class='upper'>
     <text>A</text>
     <text>B</text>
-    <text>C</text>
+    <text bindtap='tap'>C</text>
     <text>D</text>
     <text>E</text>
     <text>F</text>

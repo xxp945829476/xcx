@@ -1,8 +1,15 @@
 {
   "pages":[
+    "pages/new_site/details/report/report",
     "pages/index/index",
-    "pages/select_city/select_city",
+    
+   
     "pages/new_site/resources/new_site",
+    
+   
+    
+    "pages/select_city/select_city",
+    
     
     
     
@@ -14,7 +21,7 @@
     "pages/register/register",
     
     
-    "pages/new_site/details/report/report",
+    
     
     
     "pages/new_site/details/details/details",
