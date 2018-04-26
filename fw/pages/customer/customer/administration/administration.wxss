@@ -1,0 +1,119 @@
+/* pages/customer/customer/administration/administration.wxss */
+page{
+  background: #efefef;
+}
+.asmin_img{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 30rpx;
+}
+.message{
+  text-align: right;
+}
+.admin_box{
+  padding:18rpx 0 18rpx 30rpx;
+  font-size: 32rpx;
+  background: #fff;
+}
+.admin_box text{
+  font-size: 26rpx;
+  color: #a1a29d;
+  padding-left: 20rpx;
+}
+.buy_intention_box{
+  background: #fff;
+  font-size: 32rpx;
+  padding: 16rpx 30rpx;
+  margin-top: 20rpx;
+}
+.buy_intention{
+  font-size: 26rpx;
+  color: #a1a29d;
+  margin-top: 10rpx;
+}
+.add_l_box{
+  background: #fff;
+  padding: 26rpx 30rpx;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}
+.add_l{
+  padding-right: 30rpx;
+}
+.l_box{
+  background: #fff;
+  margin-top: 20rpx;
+}
+.l_list_title{
+  padding: 26rpx 30rpx;
+  font-size: 32rpx;
+  border:1rpx solid #efefef;
+}
+.d_see{
+  background: #cecece;
+  padding: 10rpx 30rpx;
+  border-radius: 10rpx;
+}
+.press_box{
+  background: #fff;
+  height: 160rpx;
+}
+.press{
+  width: 580rpx;
+  height: 12rpx;
+  margin: 60rpx auto 0;
+  background: #eeeeee;
+  position: relative;
+}
+.axis{
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  background: #dbdbdb;
+  border-radius: 50%;
+  top: -28rpx;
+  border:8rpx solid #ececec;
+  left: -34rpx;
+}
+.axis:after{
+  content: "";
+  position: absolute;
+  width: 16rpx;
+  height: 16rpx;
+  border: 3rpx solid #fff;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(45deg);
+  top: 50%;
+  margin-top: -8rpx;
+  left: 50%;
+  margin-left: -8px;
+}
+.axis::before{
+  content: '报备';
+  font-size: 26rpx;
+  bottom:-60rpx;
+  position: absolute
+}
+.axis_1{
+  left: 157rpx;
+}
+.axis_1::before{
+  content: '看房';
+}
+.axis_2{
+  left: 350rpx;
+}
+.axis_2::before{
+  content: '认购';
+}
+.axis_3{
+  left: 512rpx;
+}
+.axis_3::before{
+  content: '结佣';
+}
+.active{
+  background: #fb934c;
+  border:8rpx solid #ffdeb4;
+}

@@ -5,10 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    select:true,
-    selectTwo: true,
+    selectNum:'',
     num:'',
-    arrr:[],
+    intentionArr: [],
+    intentionArry: [],
     items: [
       { name: '', value: '全城',currentColor:false},
       { name: 'CHN', value: '中国', currentColor: false},
@@ -22,6 +22,7 @@ Page({
       { id: '1', value: '一室', currentColor: false},
       { id: '2', value: '二室', currentColor: false},
       { id: '3', value: '三室', currentColor: false},
+      { id: '5', value: '五室', currentColor: false },
     ]
   },
 
@@ -32,24 +33,20 @@ Page({
   
   },
   changColor:function(e){
-    
     var id = e.currentTarget.id;
     var that = this;
     var list = that.data.items;
-    var arr = []
-
- 
-
+    var intentionArr = [];
+    var arr = [];
       for (var i = 0; i < list.length; i++) {
-       
         if (list[i].value == id) {
           if (that.data.num >= 3){
-            if (list[i].value == '全城') {
-              list[i].currentColor = !list[i].currentColor;
-            }else{
-              list[i].currentColor = false
-            }
-             
+                  if (list[i].value == '全城') {
+                    list[i].currentColor = !list[i].currentColor;
+                  }else{
+                    list[i].currentColor = false
+                  };
+                  
             }else{
               list[i].currentColor = !list[i].currentColor;
             };
@@ -67,19 +64,68 @@ Page({
                 arr.push(list[i].value)
             }
           }
+        if (list[i].currentColor) {
+          intentionArr.push(list[i].value);
+          that.setData({
+            intentionArr: intentionArr,
+          })
+        }
       }
-     
-      
+
+
       if (arr.length>=3){
         arr.splice(3,arr.length)
       }
-      console.log(arr.length)
-      console.log(arr)
-
       that.setData({
         items: list,
         num: arr.length
       })
-    
-  }
+  },
+  changColorTwo: function (e) {
+      var id = e.currentTarget.id;
+      var that = this;
+      var list = that.data.apartmens;
+      var intentionArry = [];
+      var arr = []
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].value == id) {
+          if (that.data.selectNum >= 3) {
+            if (list[i].value == '不限') {
+              list[i].currentColor = !list[i].currentColor;
+            } else {
+              list[i].currentColor = false
+            }
+
+          } else {
+            list[i].currentColor = !list[i].currentColor;
+          };
+
+        } else {
+          if (list[0].currentColor) {
+            list[i].currentColor = false;
+          }
+        };
+
+        if (list[i].currentColor == true) {
+          if (list[0].currentColor) {
+            arr.splice(0, arr.length, '不限')
+          } else {
+            arr.push(list[i].value)
+          }
+        };
+        if (list[i].currentColor) {
+          intentionArry.push(list[i].value);
+          that.setData({
+            intentionArry: intentionArry,
+          })
+        }
+      }
+      if (arr.length >= 3) {
+        arr.splice(3, arr.length)
+      }
+      that.setData({
+        apartmens: list,
+        selectNum: arr.length
+      })
+  },
 })

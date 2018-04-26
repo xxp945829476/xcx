@@ -1,0 +1,38 @@
+<!--pages/customer/customer/manage.wxml-->
+
+<view class='intention'>购房意向</view>
+<view class='intention_box'>
+      <!-- <view class='intention_no'>未填写（完善购房意向可帮助置业顾问更好的接待客户,促进成交）</view> -->
+      <block wx:for="{{intentionArr}}">
+            <text class='intention_list'>{{item}}</text>
+      </block>
+      <block wx:for="{{intentionArry}}">
+            <text class='intention_list'>{{item}}</text>
+      </block>
+</view>
+<view class='total_price'>
+    <text class='total_price_title'>总价（万）</text>
+    <view class='line'>
+          <view class='price_section'>¥0~¥1000</view>
+    </view>
+</view>
+<view class='region'>
+    <text class='region_title'>区域:</text>
+    <view class='region_list_box'>
+            <view wx:for="{{items}}" id="{{item.value}}" bindtap="changColor" class="region_list {{item.currentColor ? 'region_list_c' : ''}}">
+             {{item.value}}
+            </view>
+    </view>
+</view>
+<view class='region'>
+    <text class='region_title'>户型/类型:</text>
+    <view class='region_list_box'>
+            <view wx:for="{{apartmens}}" id="{{item.value}}" bindtap="changColorTwo" class="region_list {{item.currentColor ? 'region_list_c' : ''}}">
+             {{item.value}}
+            </view>
+    </view>
+</view>
+
+<view class='submit_btn'>
+  <button class='submit'>提交</button>
+</view>

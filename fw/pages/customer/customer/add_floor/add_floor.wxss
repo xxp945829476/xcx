@@ -1,0 +1,20 @@
+/* pages/customer/customer/add_floor/add_floor.wxss */
+
+.add_city{
+  background: #efefef;
+  font-size: 30rpx;
+  padding: 20rpx 30rpx;
+}
+.add_city_name{
+  font-size: 30rpx;
+  padding: 26rpx 30rpx;
+}
+.add_city_name .xui_lt{
+  padding-right: 30rpx;
+}
+
+.add_fl{
+  font-size: 30rpx;
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #f8f8f8;
+}

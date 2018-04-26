@@ -85,6 +85,6 @@
     <view class='bot_nav xui_flex'>
         <view class='tel_ac' bindtap='call'><image src='/images/tel_icon.png'></image><text class='tel_ac_1'>联系案场</text></view>
         <text class='xui_flex_item tel_zx'  bindtap='calling'>电话咨询</text>
-        <navigator class='xui_flex_item'>报备客户</navigator> 
+        <navigator class='xui_flex_item' url='/pages/new_site/details/report/report'>报备客户</navigator> 
     </view>
 </view>

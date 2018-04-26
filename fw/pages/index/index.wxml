@@ -33,7 +33,7 @@
           </navigator >
         </view>
         <view class='xui_flex nav_box nav_box_1'>
-            <navigator class='nav xui_flex_item' url="/pages/customer/customer" hover-class="none">
+            <navigator class='nav xui_flex_item' url="/pages/customer/resources/customer" hover-class="none">
                 <image src="/images/kh.png"/>
                 <text>客户</text>
             </navigator>

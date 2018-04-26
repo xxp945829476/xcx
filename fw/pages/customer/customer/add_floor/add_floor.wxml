@@ -1,0 +1,14 @@
+<!--pages/customer/customer/add_floor/add_floor.wxml-->
+
+<view>
+    <view class='add_city'>所在城市</view>
+    <navigator class='add_city_name xui_flex' url='/pages/select_city/select_city'>
+        <view class='xui_flex_item'>无锡</view>
+        <view class='xui_lt'></view>
+    </navigator>
+</view>
+
+<view>
+    <view class='add_city'>推荐楼盘</view>
+    <view class='add_fl'>阳光100喜马拉雅</view>
+</view>

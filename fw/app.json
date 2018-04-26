@@ -1,41 +1,37 @@
 {
   "pages":[
-    "pages/new_site/details/report/report",
     "pages/index/index",
     
-   
-    "pages/new_site/resources/new_site",
     
-   
+
+    "pages/customer/customer/administration/administration",
+    "pages/customer/customer/add_floor/add_floor",
+    "pages/customer/resources/customer",
+    "pages/customer/customer/modify/modify",
+    
+    
+    
     
     "pages/select_city/select_city",
-    
-    
-    
-    
-    "pages/customer/customer",
-    
-    
-    
+
     
     "pages/register/register",
-    
-    
-    
-    
-    
-    "pages/new_site/details/details/details",
-    
     "pages/position/position",
+
+    "pages/distributor/resources/resources",
     
+    "pages/new_site/resources/new_site",
+    "pages/new_site/details/details/details",
     "pages/new_site/details/preview/preview",
     "pages/new_site/details/parameter/parameter",
+    "pages/new_site/details/report/report",
+    
     "pages/new_site/details/reward/reward",
 
     "pages/personal/resources/personal",
     "pages/personal/set/set",
 
-    "pages/distributor/resources/resources",
+    
 
     "pages/wallet/resources/wallet",
     "pages/wallet/frozen/frozen",

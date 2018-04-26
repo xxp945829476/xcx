@@ -5,8 +5,13 @@
           <navigator url="/pages/select_city/select_city" class='sel_address' hover-class="none">无锡</navigator>
           <view class='xui_flex_item search' bindtap='searchShow'><icon type="search" color="#acdcbc"  size="14"></icon><text>搜索楼盘</text></view>
         </view>
+        <view class='xui_flex select_nav'>
+              <view class='xui_flex_item' bindtap='addresShow'>区域<image class='down' src='/images/down.png'></image></view>
+              <view class='xui_flex_item' bindtap='averageShow'>均价<image class='down' src='/images/down.png'></image></view>
+              <view class='xui_flex_item' bindtap='huxingShow'>户型<image class='down' src='/images/down.png'></image></view>
+        </view>
     </view>
-    
+    <view class='height_t'></view>
     <scroll-view scroll-y="{{true}}" style="height: {{winHeight}}px;">
         <view class='new_list_box'>
         <view>
@@ -56,6 +61,50 @@
           <view class='xui_flex_item'><input placeholder="搜索楼盘" auto-focus/></view>
           <view class='cancel' bindtap='searchHide'>取消</view>
         </view>
+      </view>
+</view>
+
+
+<!-- 区域  -->
+
+<view class='address_box pop_box' wx:if="{{address}}">
+      <view class='pop xui_flex'>
+          <view class='address_na addree_t'><view class='address_list active'>区域<image class='r_jt' src='/images/r_jt.png'></image></view></view>
+          <scroll-view scroll-y="{{true}}" class='xui_flex_item addree_t addree_m'>
+              <block wx:for="{{lists}}" wx:key="item">
+                  <view class="address_list {{num==index ? 'active':''}}" bindtap='selectAddress' id='{{index}}'>{{item.name}}<image class='r_jt' src='/images/r_jt.png'></image></view>
+              </block>
+          </scroll-view>
+          <scroll-view scroll-y="{{true}}" class='xui_flex_item addree_t'>
+              <block wx:for="{{lists[num].street}}" wx:key="item">
+                    <view class="address_list {{lastNum==index ? 'active':''}}' id='{{index}}">{{item}}<image class='r_jt' src='/images/r_jt.png'></image></view>
+              </block>
+          </scroll-view>
+      </view>
+</view>
+
+<!-- 均价  -->
+
+<view class='average_box pop_box' wx:if="{{average}}">
+      <view class='pop'>
+            <view class='average_list'>不限</view>
+            <view class='average_list'>0.8万以下</view>
+            <view class='custom'>
+                自定义价格
+                <input type="digit" placeholder='最小'/>-
+                <input type="digit"  placeholder='最大'/>
+                万
+                <button>确定</button>
+            </view>
+      </view>
+</view>
+
+<!-- 户型  -->
+
+<view class='huxing_box pop_box' wx:if="{{huxing}}">
+      <view class='pop'>
+            <view class='average_list'>一室</view>
+            <view class='average_list'>二室</view>
       </view>
 </view>
 

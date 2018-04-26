@@ -1,0 +1,38 @@
+<!--pages/customer/customer/administration/administration.wxml-->
+
+<view class='xui_flex xui_align-items admin_box'>
+    <view>张小三</view>
+    <text>13814528598</text>
+    <view class='xui_flex_item message'>
+        <!-- <image class='asmin_img' src='/images/mess.png'></image> -->
+        <image class='asmin_img' src='/images/tall.png' bindtap='tell'></image>
+    </view>
+</view>
+
+<navigator class='buy_intention_box' url='/pages/customer/customer/modify/modify'>
+    <view>购房意向</view>
+    <view class='buy_intention'>0-10000元 北塘区 二室</view>
+</navigator>
+
+
+<navigator url='/pages/customer/customer/add_floor/add_floor' class='add_l_box xui_flex'>
+      <view class='xui_flex_item'>新增意向楼盘</view>
+      <view class='xui_lt add_l'></view>
+</navigator>
+
+<view class='l_box'>
+    <view class='l_list'>
+        <view class='l_list_title xui_flex xui_align-items'>
+              <view class='xui_flex_item'>阳光100喜马拉雅</view>
+              <view class='d_see'>带看</view>
+        </view>
+        <view class='press_box'>
+              <view class='press'>
+                    <view class="axis {{num==1 ? 'active':''}}"></view>
+                    <view class="axis axis_1 {{num==2 ? 'active':''}}"></view>
+                    <view class="axis axis_2 {{num==3 ? 'active':''}}"></view>
+                    <view class="axis axis_3 {{num==4 ? 'active':''}}"></view>
+              </view>
+        </view>
+    </view>
+</view>

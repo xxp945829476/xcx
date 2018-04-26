@@ -9,7 +9,7 @@
     <view class="cus_nav xui_flex_item {{num==index ? 'on':''}}" bindtap='tab' wx:for="{{lists}}" wx:key="{{item}}" id="{{index}}">{{item}}</view>
 </view>
 <view class='cus_list_box' wx:if="{{num==0}}">
-    <navigator class='cus_list' url=''>
+    <navigator class='cus_list' url='/pages/customer/customer/administration/administration'>
           <view class='cus_title'><text>2018年4月</text></view>
           <view class='cus_content_box'>
               <view>
@@ -21,7 +21,7 @@
 </view>
 
 <view class='cus_list_box' wx:if="{{num==1}}">
-    <navigator class='cus_list' url=''>
+    <navigator class='cus_list' url='/pages/customer/customer/administration/administration'>
           <view class='cus_title'><text>2018年4月</text></view>
           <view class='cus_content_box'>
               <view>
@@ -33,7 +33,7 @@
 </view>
 
 <view class='cus_list_box' wx:if="{{num==2}}">
-    <navigator class='cus_list' url=''>
+    <navigator class='cus_list' url='/pages/customer/customer/administration/administration'>
           <view class='cus_title'><text>2018年4月</text></view>
           <view class='cus_content_box'>
               <view>
@@ -45,7 +45,7 @@
 </view>
 
 <view class='cus_list_box' wx:if="{{num==3}}">
-    <navigator class='cus_list' url=''>
+    <navigator class='cus_list' url='/pages/customer/customer/administration/administration'>
           <view class='cus_title'><text>2018年4月</text></view>
           <view class='cus_content_box'>
               <view>
@@ -57,7 +57,7 @@
 </view>
 
 <view class='cus_list_box' wx:if="{{num==4}}">
-    <navigator class='cus_list' url=''>
+    <navigator class='cus_list' url='/pages/customer/customer/administration/administration'>
           <view class='cus_title'><text>2018年4月</text></view>
           <view class='cus_content_box'>
               <view>
@@ -69,7 +69,7 @@
 </view>
 
 <view class='cus_list_box' wx:if="{{num==5}}">
-    <navigator class='cus_list' url=''>
+    <navigator class='cus_list' url='/pages/customer/customer/administration/administration'>
           <view class='cus_title'><text>2018年4月</text></view>
           <view class='cus_content_box'>
               <view>
