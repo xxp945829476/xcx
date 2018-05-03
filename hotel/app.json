@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/mine/mine",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#009afb",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"true",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "images/index_icon_p.png",
+        "iconPath": "images/index_icon.png",
+        "pagePath": "pages/index/index",
+        "text": "酒店"
+      },
+      {
+        "selectedIconPath": "images/my_icon_p.png",
+        "iconPath": "images/my_icon.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ],
+    "color": "#646464",
+    "selectedColor": "#49bce9",
+    "backgroundColor": "#fff",
+    "borderStyle": "#fff"
+  }
+}

@@ -1,0 +1,34 @@
+/**app.wxss**/
+
+.xui_flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+}
+.xui_flex_item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1
+}
+.xui_align_items{
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center
+}
+.xui_lt{
+  position: relative;
+  color: #999999;
+}
+.xui_lt:after{
+  content: "";
+  position: absolute;
+  width: 16rpx;
+  height: 16rpx;
+  border: 3rpx solid #999999;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(45deg);
+  top: 50%;
+  margin-top: -8rpx;
+}
