@@ -1,0 +1,45 @@
+/* pages/mine/coiling/coiling.wxss */
+page{
+   background: #f5f5f5;
+}
+.col_list_box{
+  padding: 10rpx 30rpx;
+}
+.col_list{
+  background: #fff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  margin-top: 30rpx;
+}
+.col_t{
+  background: #ff6666;
+  color: #fff;
+  padding: 50rpx 40rpx;
+  position:relative;
+  font-size: 32rpx;
+}
+.col_t::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  border: 2rpx dashed #fff;
+  bottom: 0;
+  left: 0;
+}
+.col_time_box{
+  padding: 30rpx 40rpx;
+}
+.col_time{
+  font-size: 30rpx;
+  color: #888888;
+}
+.col_time_s{
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 20rpx;
+}
+.lq_btn{
+  font-size: 28rpx;
+  background: #ff6666;
+  color: #fff;
+}

@@ -1,6 +1,15 @@
 {
   "pages":[
-    "pages/mine/mine",
+    "pages/mine/resources/mine",
+    "pages/mine/coiling/coiling",
+    "pages/mine/order/order",
+    
+    "pages/mine/cash_coupon_two/cash_coupon_two",
+    "pages/mine/cash_coupon_one/cash_coupon_one",
+    
+    
+    "pages/mine/coupons/coupons",
+    
     "pages/index/index"
   ],
   "window":{
@@ -22,7 +31,7 @@
       {
         "selectedIconPath": "images/my_icon_p.png",
         "iconPath": "images/my_icon.png",
-        "pagePath": "pages/mine/mine",
+        "pagePath": "pages/mine/resources/mine",
         "text": "我的"
       }
     ],

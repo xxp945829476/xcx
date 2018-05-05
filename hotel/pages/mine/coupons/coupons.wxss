@@ -1,0 +1,40 @@
+/* pages/mine/coupons/coupons.wxss */
+page{
+  background: #f5f5f5;
+  color: #8b8b8b;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+.c_tip{
+  text-align: center;
+}
+.co_list_box{
+  padding: 0 30rpx;
+}
+.co_list{
+  background: #fff;
+  padding: 40rpx 30rpx;
+  border-radius: 18rpx;
+  margin-top: 40rpx;
+}
+.co_img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.co_img image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.cou_msg{
+  padding-left: 20rpx;
+}
+.co_t{
+  font-size: 32rpx;
+}
+.co_m{
+  font-size: 28rpx;
+  color: #888888;
+  margin-top: 10rpx;
+}

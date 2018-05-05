@@ -1,0 +1,44 @@
+/* pages/mine/order/order.wxss */
+page{
+  background: #f5f5f5;
+}
+.h_list_box{
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.hotel_name{
+  font-size: 32rpx;
+  padding: 18rpx 30rpx;
+  border-bottom: 1rpx solid #fafafa;
+}
+.h_msg{
+  padding: 20rpx 30rpx;
+}
+.h_img{
+  width: 200rpx;
+  height: 140rpx;
+}
+.h_t{
+  padding-left: 20rpx;
+  font-size: 32rpx;
+}
+.h_b{
+  font-size: 26rpx;
+  color: #898989;
+  margin-top: 16rpx;
+}
+.h_p{
+  color: #ff4761;
+  font-size: 34rpx;
+}
+.h_but{
+  font-size: 24rpx;
+  padding: 30rpx;
+  text-align: right;
+  border-top: 1rpx solid #fafafa;
+}
+.h_but text{
+  border: 1rpx solid #333;
+  padding: 8rpx 16rpx;
+  border-radius: 6rpx;
+}

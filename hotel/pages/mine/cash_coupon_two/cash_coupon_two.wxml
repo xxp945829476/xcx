@@ -1,0 +1,14 @@
+<!--pages/mine/cash_coupon_two/cash_coupon_two.wxml-->
+<view class='cash_box'>
+    <view  class='cash_content'>
+        <view class='cash_logo'>
+            <image src='/images/logo.png'></image>
+            <view>夺冠</view>
+        </view>
+        <view class='cash_t'>满10减1代金券</view>
+        
+        <button class='cash_but'>领取到卡包</button>
+    </view>
+</view>
+
+<navigator url='' class='see_j' hover-class='none'>查看已领取的代金券</navigator>

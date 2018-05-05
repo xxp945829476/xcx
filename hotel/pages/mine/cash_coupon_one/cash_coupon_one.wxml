@@ -1,0 +1,18 @@
+<!--pages/mine/cash_coupon_one/cash_coupon_one.wxml-->
+
+<view class='cash_box'>
+    <view  class='cash_content'>
+        <view class='cash_logo'>
+            <image src='/images/logo.png'></image>
+            <view>夺冠</view>
+        </view>
+        <view class='cash_t'>满10减1代金券</view>
+        <view>
+              <view class='cash_mag'><text>使用条件:</text>消费满10元k可用</view>
+              <view class='cash_mag'><text>可用条件:</text>2018.05.05-2018.06.03,周一至周日 全天</view>
+        </view>
+        <button class='cash_but'>领取到卡包</button>
+    </view>
+</view>
+
+<navigator url='' class='see_j' hover-class='none'>查看已领取的代金券</navigator>

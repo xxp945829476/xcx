@@ -1,0 +1,55 @@
+/* pages/mine/cash_coupon_two/cash_coupon_two.wxss */
+
+/* pages/mine/cash_coupon_one/cash_coupon_one.wxss */
+page{
+  background: #a9d92b;
+}
+.cash_box{
+  padding: 60rpx 30rpx;
+}
+.cash_content{
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 100rpx 0 20rpx;
+  position: relative;
+}
+.cash_t{
+  text-align: center;
+  font-size: 46rpx;
+  margin-bottom: 26rpx;
+}
+.cash_mag{
+  font-size: 26rpx;
+  color: #868686;
+  padding: 0 36rpx;
+  line-height: 1.6;
+}
+.cash_mag text{
+  color: #313131;
+}
+.cash_but{
+  margin: 50rpx 36rpx 0;
+  background: #a9d92b;
+  color: #fff;
+  font-size: 32rpx;
+}
+.cash_logo{
+  position: absolute;
+  top: -60rpx;
+  width: 100%;
+  text-align: center;
+  color: #9f9f9f;
+  font-size: 30rpx;
+}
+.cash_logo image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.see_j{
+  position: fixed;
+  bottom: 40rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fff;
+  width: 100%;
+}

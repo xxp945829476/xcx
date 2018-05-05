@@ -1,0 +1,31 @@
+<!--pages/mine/coupons/coupons.wxml-->
+<view class='c_tip'>你有3张代金券，点击使用</view>
+<view class='co_list_box'>
+    <view class='xui_flex xui_align_items co_list'>
+        <view class='co_img'>
+            <image src='/images/xt.jpg'></image>
+        </view>
+        <view class='xui_flex_item cou_msg'>
+            <view class='co_t'>夺冠</view>
+            <view class='co_m'>满0.02减0.01代金券</view>
+        </view>
+    </view>
+    <view class='xui_flex xui_align_items co_list'>
+        <view class='co_img'>
+            <image src='/images/xt.jpg'></image>
+        </view>
+        <view class='xui_flex_item cou_msg'>
+            <view class='co_t'>夺冠</view>
+            <view class='co_m'>满0.02减0.01代金券</view>
+        </view>
+    </view>
+    <view class='xui_flex xui_align_items co_list'>
+        <view class='co_img'>
+            <image src='/images/xt.jpg'></image>
+        </view>
+        <view class='xui_flex_item cou_msg'>
+            <view class='co_t'>夺冠</view>
+            <view class='co_m'>满0.02减0.01代金券</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/mine/order/order.wxml-->
+
+<view class='h_list_box'>
+    <view class='hotel_name'>雅居民宿</view>
+    <view class='xui_flex h_msg'>
+        <view><image class='h_img' src='/images/fj.jpg'></image></view>
+        <view class='h_t xui_flex_item'>
+              <view>经济舒爽型</view>
+              <view class='h_b'>可住2人|20㎡|无窗|不含早</view>
+        </view>
+        <view class='h_p'>¥180</view>
+    </view>
+    <view class='h_but'>
+          <text>删除订单</text>
+    </view>
+</view>

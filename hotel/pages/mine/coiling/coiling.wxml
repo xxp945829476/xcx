@@ -1,0 +1,36 @@
+<!--pages/mine/coiling/coiling.wxml-->
+
+<view class='col_list_box'>
+    <navigator class='col_list' url='/pages/mine/cash_coupon_one/cash_coupon_one'>
+          <view class='col_t'>满10减1代金券</view>
+          <view class='xui_flex xui_align_items col_time_box'>
+                <image class='col_time_s' src='/images/sz.png'></image>
+                <view class='col_time xui_flex_item'>
+                    有效期至:领取后可见
+                </view>
+                <button class='lq_btn'>领取</button>
+          </view>
+    </navigator>
+    <navigator class='col_list' url='/pages/mine/cash_coupon_two/cash_coupon_two'>
+          <view class='col_t'>满0.02减0.01代金券</view>
+          <view class='xui_flex xui_align_items col_time_box'>
+                <image class='col_time_s' src='/images/sz.png'></image>
+                <view class='col_time xui_flex_item'>
+                    有效期至:2018-06-10
+                </view>
+                <button class='lq_btn'>领取</button>
+          </view>
+    </navigator>
+    <navigator class='col_list' url=''>
+          <view class='col_t'>超级VIP</view>
+          <view class='xui_flex xui_align_items col_time_box'>
+                <image class='col_time_s' src='/images/sz.png'></image>
+                <view class='col_time xui_flex_item'>
+                    有效期至:领取后可见
+                </view>
+                <button class='lq_btn'>领取</button>
+          </view>
+    </navigator>
+</view>
+
+

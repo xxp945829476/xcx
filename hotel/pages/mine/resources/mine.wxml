@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='userinfo_box'>
+      <view class="userinfo">
+        <image class="userinfo_avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <view>
+            <text class="userinfo_nickname">{{userInfo.nickName}}</text>
+            <image class="update" src="/images/update.png"></image>
+        </view>
+      </view>
+
+      <view class='open_box'>
+          <view class='xui_flex open_vip'>
+              <view class='xui_flex_item'>
+                    <view class='vip_tq'><image class="hg" src="/images/hg.png"></image>会员特权</view>
+                    <view>消费返积分,各种特权享不停</view>
+              </view>
+              <view class='open_btn' bindtap='vShow'>
+                  <text>开通会员</text>
+              </view>
+          </view>
+      </view>
+  </view>
+
+  <view>
+      <navigator class='xui_flex mi_list xui_align_items' url='/pages/mine/coupons/coupons'>
+            <image class="list_i" src="/images/kb.png"></image>
+            <view class='xui_flex_item'>卡包</view>
+      </navigator>
+      <navigator class='xui_flex mi_list xui_align_items' url='/pages/mine/coiling/coiling'>
+            <image class="list_i" src="/images/lq.png"></image>
+            <view class='xui_flex_item'>领取卡卷</view>
+      </navigator>
+      <view class='xui_flex mi_list xui_align_items' bindtap='tab'>
+            <image class="list_i" src="/images/jd.png"></image>
+            <view class='xui_flex_item'>酒店</view>
+            <image class="list_down {{show==true ? '':'roate'}}" src="/images/down.png"></image>
+      </view>
+      <view class='my_order' wx:if="{{show}}">
+        <navigator url='/pages/mine/order/order' hover-class='none'>我的订单</navigator>
+      </view>
+      <view class='xui_flex mi_list xui_align_items'>
+            <image class="list_i" src="/images/set.png"></image>
+            <view class='xui_flex_item'>设置</view>
+      </view>
+  </view>
+  
+  <!--开通会员  -->
+  <view class='open_v_box' wx:if="{{vipShow}}">
+        <view class='open_v'>
+              <view class='open_t'>开通会员</view>
+              <view>
+                    <view class='fill_msg'>
+                        <input placeholder="请输入您的姓名" placeholder-style="color:#777777;"/>
+                    </view>
+                    <view class='fill_msg'>
+                        <input placeholder="请输入您的手机号" type="number" placeholder-style="color:#777777;"/>
+                    </view>
+                    <view class='fill_msg xui_flex'>
+                        <input class='xui_flex_item' placeholder="请输入验证码" type="number" placeholder-style="color:#777777;"/>
+                        <button class='gain_code' disabled="{{disabled}}" bindtap='getCode'>{{time}}</button>
+                    </view>
+              </view>
+              <button  class='sure'>确认</button>
+              <view class='other'>其他方式</view>
+              <button  class='get_tel'>获取微信手机号</button>
+              <view class='colsed' bindtap='vHide'></view>
+        </view>
+  </view>
+
+</view>
