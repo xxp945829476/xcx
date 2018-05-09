@@ -1,0 +1,16 @@
+<!--pages/mine/set/set.wxml-->
+
+<view>
+      <navigator class='set_list' url='/pages/mine/address/address'>
+          <image src='/images/address.png' class='set_i'></image>
+          <text>收货地址</text>
+      </navigator>
+      <navigator class='set_list' url='/pages/mine/jurisdiction/jurisdiction'>
+          <image src='/images/set_icon.png' class='set_i'></image>
+          <text>授权设置</text>
+      </navigator>
+      <view class='set_list'>
+          <image src='/images/clear.png' class='set_i'></image>
+          <text>清除缓存</text>
+      </view>
+</view>

@@ -1,0 +1,104 @@
+<!--pages/mine/add_address/add_address.wxml-->
+
+<view class='fill_box'>
+    <view class='fill_list xui_flex xui_align_items'>
+        <view>联系人</view>
+        <view class='xui_flex_item'>
+            <input placeholder='姓名'/>
+        </view>
+    </view>
+</view>
+
+<view class='fill_box'>
+    <view class='fill_list xui_flex xui_align_items'>
+        <view>性别</view>
+        <view class='xui_flex_item'>
+            <view class='sel_add'>
+                <text class='active'>先生</text>
+                <text>女士</text>
+            </view> 
+        </view>
+    </view>
+</view>
+
+<view class='fill_box'>
+    <view class='fill_list xui_flex xui_align_items'>
+        <view>电话</view>
+        <view class='xui_flex_item'>
+            <input placeholder='手机号码'/>
+        </view>
+    </view>
+</view>
+
+<view class='fill_box'>
+    <view class='fill_list xui_flex xui_align_items'>
+        <view>省份</view>
+        <view class='xui_flex_item'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='sel_city'>
+              <view class="picker">
+                    {{array[index]}}
+              </view>
+            </picker>
+        </view>
+    </view>
+</view>
+<view class='fill_box'>
+    <view class='fill_list xui_flex xui_align_items'>
+        <view>城市</view>
+        <view class='xui_flex_item'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='sel_city'>
+              <view class="picker">
+                    {{array[index]}}
+              </view>
+            </picker>
+        </view>
+    </view>
+</view>
+<view class='fill_box'>
+    <view class='fill_list xui_flex xui_align_items'>
+        <view>区域</view>
+        <view class='xui_flex_item'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='sel_city'>
+              <view class="picker">
+                    {{array[index]}}
+              </view>
+            </picker>
+        </view>
+    </view>
+</view>
+
+<view class='fill_box'>
+    <view class='fill_list xui_flex xui_align_items'>
+        <view>详细地址</view>
+        <view class='xui_flex_item'>
+            <textarea  placeholder='详细地址（如门牌号）' auto-height class='detail_address'>
+            </textarea>
+        </view>
+    </view>
+    <view class='sel_add add_a'>
+          <text class='active'>家里</text>
+          <text>学校</text>
+          <text>公司</text>
+          <text>住处</text>
+          <text>其他</text>
+    </view> 
+</view>
+
+<view class='fill_box'>
+    <view class='fill_list xui_flex xui_align_items yz'>
+        <view>邮政编码</view>
+        <view class='xui_flex_item'>
+            <input placeholder='邮政编码'/>
+        </view>
+    </view>
+</view>
+
+
+<view class='add_btn xui_flex'>
+    <view>
+        <button type="warn" class='xui_flex_item'>取消</button>
+    </view>
+    <view>
+        <button type="primary" class='xui_flex_item'>保存</button>
+    </view>
+</view>

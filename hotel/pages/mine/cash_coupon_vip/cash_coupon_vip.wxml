@@ -1,0 +1,18 @@
+<!--pages/mine/cash_coupon_vip/cash_coupon_vip.wxml-->
+
+<view class='lq_title'>领取会员卡</view>
+
+<view class='card_bg'>
+    <image src='/images/bg.jpg' class='bg'></image>
+    <view class='vip_box xui_flex'>
+        <image src='/images/logo.png' class='tx'></image>
+        <view>
+            <view>夺冠</view>
+            <view>超级vip</view>
+        </view>
+    </view>
+</view>
+
+<button class='lq_but'>领取到卡包</button>
+
+<navigator url='/pages/mine/see_card/see_card' class='see_j' hover-class='none'>查看已领取的代金券</navigator>

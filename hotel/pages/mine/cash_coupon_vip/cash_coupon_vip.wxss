@@ -1,0 +1,42 @@
+/* pages/mine/cash_coupon_vip/cash_coupon_vip.wxss */
+.lq_title{
+  font-size: 36rpx;
+  text-align: center;
+  margin: 40rpx 30rpx;
+}
+.card_bg{
+  width: 700rpx;
+  margin: 0 auto;
+  position: relative;
+}
+.bg{
+  width: 700rpx;
+  height: 418rpx;
+}
+.vip_box{
+  position: absolute;
+  top: 30rpx;
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+.tx{
+  width: 100rpx;
+  height: 100rpx;
+  margin:0 20rpx 0 40rpx;
+}
+
+.lq_but{
+  margin: 50rpx 36rpx 0;
+  background: #54bd46;
+  color: #fff;
+  font-size: 32rpx;
+}
+.see_j{
+  position: fixed;
+  bottom: 40rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #576b95;
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+<!--pages/mine/jurisdiction/jurisdiction.wxml-->
+<view class='j_t'>允许"周边酒店"使用我的</view>
+
+<view class='j_box'>
+      <view class='xui_flex j_list xui_align_items'>
+          <view class='xui_flex_item'>使用我的地理位置</view>
+          <view class="body-view">
+              <switch checked bindchange="switch1Change"/>
+          </view>
+      </view>
+      <view class='xui_flex j_list xui_align_items'>
+          <view class='xui_flex_item'>使用我的用户信息</view>
+          <view class="body-view">
+              <switch checked bindchange="switch2Change"/>
+          </view>
+      </view>
+</view>

@@ -39,10 +39,10 @@
       <view class='my_order' wx:if="{{show}}">
         <navigator url='/pages/mine/order/order' hover-class='none'>我的订单</navigator>
       </view>
-      <view class='xui_flex mi_list xui_align_items'>
+      <navigator class='xui_flex mi_list xui_align_items' url='/pages/mine/set/set'>
             <image class="list_i" src="/images/set.png"></image>
             <view class='xui_flex_item'>设置</view>
-      </view>
+      </navigator>
   </view>
   
   <!--开通会员  -->

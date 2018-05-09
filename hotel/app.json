@@ -1,16 +1,19 @@
 {
   "pages":[
+    "pages/index/details/details",
+    "pages/index/index/index",
     "pages/mine/resources/mine",
+    "pages/mine/set/set",
+    "pages/mine/address/address",
+    "pages/mine/jurisdiction/jurisdiction",
+    "pages/mine/add_address/add_address",
     "pages/mine/coiling/coiling",
+    "pages/mine/see_card/see_card",
+    "pages/mine/cash_coupon_vip/cash_coupon_vip",
     "pages/mine/order/order",
-    
     "pages/mine/cash_coupon_two/cash_coupon_two",
     "pages/mine/cash_coupon_one/cash_coupon_one",
-    
-    
-    "pages/mine/coupons/coupons",
-    
-    "pages/index/index"
+    "pages/mine/coupons/coupons"
   ],
   "window":{
     "backgroundTextStyle":"dark",
@@ -25,7 +28,7 @@
       {
         "selectedIconPath": "images/index_icon_p.png",
         "iconPath": "images/index_icon.png",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/index/index/index",
         "text": "酒店"
       },
       {

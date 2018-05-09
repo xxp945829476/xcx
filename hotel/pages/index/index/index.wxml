@@ -1,0 +1,45 @@
+<!--pages/index/index.wxml-->
+
+<view class='contains'>
+      <navigator class='i_list' url=''>
+            <image src='/images/ms.jpg' mode='widthFix' class='i_img'></image>
+            <view class='i_msg'>
+                <view class='xui_flex xui_align_items i_con'>
+                  <view class='xui_flex_item i_name'>雅居民宿</view>
+                  <view class='i_price'>¥0.1起</view>
+                </view>
+                <view class='xui_flex xui_align_items i_con'>
+                  <view class='xui_flex_item'>4.0 | 5人评论</view>
+                  <view class='i_label'>
+                        <text>停车</text>
+                        <text>WiFi</text>
+                        <text>餐厅</text>
+                  </view>
+                </view>
+                <view class='xui_flex xui_align_items i_con'>
+                  <view class='xui_flex_item i_address'><text>上海</text><text>707km</text></view>
+                </view>
+            </view>
+      </navigator>
+
+      <navigator class='i_list' url=''>
+            <image src='/images/ms.jpg' class='i_img' mode='widthFix'></image>
+            <view class='i_msg'>
+                <view class='xui_flex xui_align_items i_con'>
+                  <view class='xui_flex_item i_name'>雅居民宿</view>
+                  <view class='i_price'>¥0.1起</view>
+                </view>
+                <view class='xui_flex xui_align_items i_con'>
+                  <view class='xui_flex_item'>4.0 | 5人评论</view>
+                  <view class='i_label'>
+                        <text>停车</text>
+                        <text>WiFi</text>
+                        <text>餐厅</text>
+                  </view>
+                </view>
+                <view class='xui_flex xui_align_items i_con'>
+                  <view class='xui_flex_item i_address'><text>上海</text><text>707km</text></view>
+                </view>
+            </view>
+      </navigator>
+</view>

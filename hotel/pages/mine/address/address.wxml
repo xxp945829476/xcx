@@ -1,0 +1,30 @@
+<!--pages/mine/address/address.wxml-->
+
+<view class='add_list' wx:for="{{items}}" url="">
+    <navigator class='xui_flex add_content xui_align_items'>
+        <view class='xui_flex_item'>
+            <view class='add_name'>谁谁谁 <text>女士</text><text>13814254256</text></view>
+            <view class='address'>北京北京市东城区花园307</view>
+        </view>
+         <view class='sel_add'>
+            <text>家里</text>
+         </view> 
+    </navigator>
+    <navigator class='xui_flex sel_btn xui_align_items'>
+          <label class="radio xui_flex_item" bindtap='sel' id="{{item.id}}">
+              <radio checked="{{item.checked}}"/>设为默认
+          </label>
+          <navigator class='bj' url='' hover-class='none'>
+              <image class='gn' src='/images/edit.png'></image>
+              编辑
+          </navigator>
+          <view class='bj'>
+              <image class='gn' src='/images/del.png'></image>
+              删除
+          </view>
+    </navigator>
+</view>
+<view class='kong'></view>
+<navigator class='add_address' url="/pages/mine/add_address/add_address">+新增地址</navigator>
+
+

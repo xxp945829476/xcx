@@ -1,0 +1,97 @@
+<!--pages/index/details/details.wxml-->
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" circular="true" duration="{{duration}}" indicator-color="#afafaf" indicator-active-color="#0274b3">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='pos_box xui_flex xui_align_items'>
+    <view class='xui_flex_item'>郑州</view>
+    <image src='/images/posi.png' class='pos_img'></image>
+</view>
+
+<view class='nav_box'>
+    <view class='xui_flex nav'>
+      <view class='xui_flex_item active'><text>预定</text></view>
+      <view class='xui_flex_item'><text>住客点评</text></view>
+      <view class='xui_flex_item'><text>酒店详情</text></view>
+    </view>
+
+
+    <view>
+      <view class='xui_flex reserve_time'>
+            <view class='xui_flex_item reserve_t'>
+                <view>入住</view>
+                <view class='r_t'>2018-05-14</view>
+            </view>
+            <view class='xui_flex_item reserve_t'>
+                <view>离店</view>
+                <view class='r_t'>2018-05-15</view>
+            </view>
+            <view class='total'>共1晚</view>
+      </view>
+
+      <view class='h_list_box' wx:for="{{lists}}">
+          <view class='xui_flex h_msg' id="{{index}}" bindtap='down'>
+              <view><image class='h_img' src='/images/fj.jpg'></image></view>
+              <view class='h_t xui_flex_item'>
+                    <view>{{item.title}}</view>
+                    <view class='h_b'>可住2人|20㎡|无窗|不含早</view>
+              </view>
+              <view class='h_p'>¥180<text>起</text><image class='d_img' src='/images/down.png'></image></view>
+          </view>
+          <view class="xui_flex payment_box {{num==index?'on':''}}" bindtap='show'>
+              <view class='xui_flex_item'>
+                  <view>经济</view>
+                  <view class='pay_q'>随时取消<text>线上支付</text></view>
+              </view>
+              <view class='xui_flex xui_align_items'>
+                  <view class='pay_price'>¥180</view>
+                  <view class='p_m'>
+                      <view class='p_l'>订</view>
+                      <view class='p_l'>预付</view>
+                  </view>
+              </view>
+          </view>
+      </view>
+    </view>
+</view>
+
+
+<view class='pay_pop' wx:if="{{show}}">
+    <view class='p_main'>
+        <view class='po_a'>经济舒爽型</view>
+        <view class='po_b'>经济</view>
+
+        <view class='po_c'>
+              <text>无早餐</text>
+              <text>无窗户</text>
+              <text>2层</text>
+              <text>30平米</text>
+              <text>可入住2人</text>
+              <text>有WiFi</text>
+        </view>
+
+        <view class='po_d'>预订须知</view>
+        <view class='po_e xui_flex'>
+            <view>预付</view>
+            <view>立即线上支付</view>
+        </view>
+        <view class='po_e xui_flex'>
+            <view>随时取消</view>
+            <view>订单预订后,可取消或变更</view>
+        </view>
+        <view class='po_f xui_flex'>
+            <view class='xui_flex_item po_g'>¥180</view>
+            <view class='po_h'>立即预订</view>
+        </view>
+
+        <view class='close' bindtap='hide'>×</view>
+    </view>
+</view>
+
+

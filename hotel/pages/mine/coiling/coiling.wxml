@@ -21,7 +21,7 @@
                 <button class='lq_btn'>领取</button>
           </view>
     </navigator>
-    <navigator class='col_list' url=''>
+    <navigator class='col_list' url='/pages/mine/cash_coupon_vip/cash_coupon_vip'>
           <view class='col_t'>超级VIP</view>
           <view class='xui_flex xui_align_items col_time_box'>
                 <image class='col_time_s' src='/images/sz.png'></image>

@@ -15,4 +15,4 @@
     </view>
 </view>
 
-<navigator url='' class='see_j' hover-class='none'>查看已领取的代金券</navigator>
+<navigator url='/pages/mine/see_card/see_card' class='see_j' hover-class='none'>查看已领取的代金券</navigator>
