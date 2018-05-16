@@ -1,0 +1,90 @@
+﻿@charset "utf-8";
+
+/*     basic.css
+---------------------------------------------------------------- */
+
+/* 所有元素空白 0, 字体大小 100%, 垂直对齐 baseline, 背景颜色 透明 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	outline: 0;
+	border: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+*{
+	margin: 0;
+	padding:0;
+}
+
+html{
+	width:100%;
+}
+
+
+ 初始化HTML5新元素 
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* 正文基本设定，删除引用语句 */
+body { 
+	font: 14px/1.5 "Helvetica Neue", Helvetica, Verdana, Arial, Sans-Serief; 
+	color: #333333; 
+	font-family: "Microsoft YaHei";
+	background: #fff;
+	overflow-x:hidden; 
+}
+
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+
+/* 设置标题字体大小 */
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #111; }
+
+/* 重定义超链的基本样式 */
+a:link, a:visited { 
+	text-decoration: none;
+}
+a{
+	color: #333;
+}
+
+
+/* 设置包含img的a元素的边框与Padding */
+a img {
+	border: 0; 
+	padding: 0;
+}
+em,i{
+	font-style: normal;
+}
+
+b,strong{
+	font-weight:normal;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.cl{
+	clear: both;
+}
+
+
+/*      以上为页面基本样式，清除原有属性，通用
+---------------------------------------------------------------- */
+
+/*   *************************************** 头部顶端                            */
+

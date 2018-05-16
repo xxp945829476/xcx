@@ -1,0 +1,17 @@
+<!--pages/index/sel_time/sel_time.wxml-->
+<view class='date xui_flex'>
+      <text class='xui_flex_item'>日</text>
+      <text class='xui_flex_item'>一</text>
+      <text class='xui_flex_item'>二</text>
+      <text class='xui_flex_item'>三</text>
+      <text class='xui_flex_item'>四</text>
+      <text class='xui_flex_item'>五</text>
+      <text class='xui_flex_item'>六</text>
+</view>
+
+<view class='day_box'>
+    <view class='d_title'>2018年5月</view>
+      <view  class='xui_flex day_list'>
+          <view wx:for="{{array[0]}}">{{item+1}}</view>
+      </view>
+</view>

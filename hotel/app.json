@@ -1,7 +1,9 @@
 {
   "pages":[
-    "pages/index/details/details",
     "pages/index/index/index",
+    "pages/index/details/details",
+    "pages/index/sel_time/sel_time",
+    
     "pages/mine/resources/mine",
     "pages/mine/set/set",
     "pages/mine/address/address",

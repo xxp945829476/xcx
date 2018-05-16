@@ -1,7 +1,7 @@
 <!--pages/index/index.wxml-->
 
 <view class='contains'>
-      <navigator class='i_list' url=''>
+      <navigator class='i_list' url='/pages/index/details/details'>
             <image src='/images/ms.jpg' mode='widthFix' class='i_img'></image>
             <view class='i_msg'>
                 <view class='xui_flex xui_align_items i_con'>
@@ -22,7 +22,7 @@
             </view>
       </navigator>
 
-      <navigator class='i_list' url=''>
+      <navigator class='i_list' url='/pages/index/details/details'>
             <image src='/images/ms.jpg' class='i_img' mode='widthFix'></image>
             <view class='i_msg'>
                 <view class='xui_flex xui_align_items i_con'>

@@ -16,14 +16,12 @@
 
 <view class='nav_box'>
     <view class='xui_flex nav'>
-      <view class='xui_flex_item active'><text>预定</text></view>
-      <view class='xui_flex_item'><text>住客点评</text></view>
-      <view class='xui_flex_item'><text>酒店详情</text></view>
+      <view class="xui_flex_item {{cutNum==1?'active':''}}" id='1' bindtap='toggle'><text>预定</text></view>
+      <view class="xui_flex_item {{cutNum==2?'active':''}}" id='2' bindtap='toggle'><text>住客点评</text></view>
+      <view class="xui_flex_item {{cutNum==3?'active':''}}" id='3' bindtap='toggle'><text>酒店详情</text></view>
     </view>
-
-
-    <view>
-      <view class='xui_flex reserve_time'>
+     <view wx:if="{{cutNum==1}}">
+      <navigator class='xui_flex reserve_time' url='/pages/index/sel_time/sel_time' hover-class='none'>
             <view class='xui_flex_item reserve_t'>
                 <view>入住</view>
                 <view class='r_t'>2018-05-14</view>
@@ -33,7 +31,7 @@
                 <view class='r_t'>2018-05-15</view>
             </view>
             <view class='total'>共1晚</view>
-      </view>
+      </navigator>
 
       <view class='h_list_box' wx:for="{{lists}}">
           <view class='xui_flex h_msg' id="{{index}}" bindtap='down'>
@@ -58,6 +56,51 @@
               </view>
           </view>
       </view>
+    </view> 
+
+
+    <!--住客点评  -->
+
+    <view wx:if="{{cutNum==2}}">
+          <view class='score_box'>
+                <view class='score'><text>4.0</text>分</view>
+                <view class='score_num'>全部评论:5条</view>
+          </view>
+          <view>
+                <view class='score_list'>
+                    <view class='score_title'>小k<text>5分</text></view>
+                    <view class='score_msg'>都是废话时间还是</view>
+                    <view>
+                        <image src='/images/fj.jpg' class='sc_img'></image>
+                    </view>
+                </view>
+          </view>
+    </view>
+
+
+    <!--酒店详情  -->
+    <view class='jd_detail' wx:if="{{cutNum==3}}">
+          <view class='de_t'><image class='star' src="/images/star.png"></image>酒店服务</view>
+          <view class='fw_box'>
+              <view class='fw'>
+                  <image src='/images/sel.png' class='sel'></image>停车
+              </view>
+              <view class='fw'>
+                  <image src='/images/sel.png' class='sel'></image>停车
+              </view>
+              <view class='fw'>
+                  <image src='/images/sel.png' class='sel'></image>停车
+              </view>
+              <view class='fw'>
+                  <image src='/images/sel.png' class='sel'></image>停车
+              </view>
+          </view>
+
+          <view class='de_t'><image class='star' src="/images/star.png"></image>酒店介绍</view>
+          <view class='js'>
+              闪电发货撒旦法打算很费劲的说法第三方说的的双方各撒旦法撒旦法地方第三方第三方的双方各第三方大商股份第三方 的说法是发给第三方
+              爱啥啥大数据黄 啥的撒娇打算 撒的就是电话费说的 第三方时代峻峰哈十三点解放军水电费
+          </view>
     </view>
 </view>
 
@@ -92,6 +135,11 @@
 
         <view class='close' bindtap='hide'>×</view>
     </view>
+</view>
+
+
+<view class='tel' bindtap='tel'>
+     <image src='/images/tel.png' class='tel_i'></image>
 </view>
 
 

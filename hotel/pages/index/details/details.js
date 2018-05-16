@@ -20,7 +20,8 @@ Page({
       { 'title': '经济舒爽型', 'price': 160 },
       { 'title': '经济舒爽型', 'price': 160 }
     ],
-    num:-1
+    num:-1,
+    cutNum:1
   },
 
   /**
@@ -49,6 +50,18 @@ Page({
   hide:function(){
     this.setData({
       show: false
+    })
+  },
+
+  tel:function(){
+    wx.makePhoneCall({
+      phoneNumber: '1340000'
+    })
+  },
+  toggle:function(e){
+    var id = e.currentTarget.id;
+    this.setData({
+      cutNum: id
     })
   },
   /**

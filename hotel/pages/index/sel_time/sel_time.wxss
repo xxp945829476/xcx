@@ -1,0 +1,35 @@
+/* pages/index/sel_time/sel_time.wxss */
+page{
+  background: #f5f5f5;
+}
+.date{
+  padding: 0 30rpx;
+  text-align: center;
+  font-size: 30rpx;
+  background: #fff;
+  box-shadow: 0 10rpx 20rpx #d8d9d9;
+}
+.date text{
+  padding: 26rpx 0;
+}
+.d_title{
+  text-align: center;
+  padding: 30rpx 0;
+  color: #00b0ff;
+  font-size: 36rpx;
+}
+.day_box{
+  background: #fff;
+  border-bottom: 1rpx solid #fafafa;
+}
+.day_list{
+  flex-wrap:wrap;
+  padding: 0 30rpx;
+}
+.day_list view{
+  width: 98.5rpx;
+  display: block;
+  text-align: center;
+  font-size: 28rpx;
+  padding: 26rpx 0;
+}
